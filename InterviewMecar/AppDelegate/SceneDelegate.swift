@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow.init(windowScene: scene)
         window.overrideUserInterfaceStyle = .light
         // TODO: Check state login to set rootview
-        window.rootViewController = createTabbarController()
+        window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
         self.window = window
         window.makeKeyAndVisible()
     }

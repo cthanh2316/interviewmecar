@@ -29,7 +29,7 @@ enum Roboto : String {
 }
 
 extension UIFont {
-    func font(style: Roboto, ofSize size: CGFloat) -> UIFont {
-        return UIFont(name: style.rawValue, size: size) ?? UIFont.systemFont(ofSize: size)
+    convenience init(style: Roboto, ofSize size: CGFloat) {
+        self.init(name: style.rawValue, size: size)!
     }
 }

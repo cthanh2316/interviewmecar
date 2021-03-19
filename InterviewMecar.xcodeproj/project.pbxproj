@@ -56,6 +56,8 @@
 		A471BEBE2604696F00C60F2A /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEBC2604696F00C60F2A /* MessageViewController.xib */; };
 		A471BEC42604697D00C60F2A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEC22604697D00C60F2A /* ProfileViewController.swift */; };
 		A471BEC52604697D00C60F2A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEC32604697D00C60F2A /* ProfileViewController.xib */; };
+		A471BECA2604729F00C60F2A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEC92604729F00C60F2A /* UIImage+Extension.swift */; };
+		A471BECF26047F4100C60F2A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BECE26047F4100C60F2A /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		A471BEBC2604696F00C60F2A /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		A471BEC22604697D00C60F2A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A471BEC32604697D00C60F2A /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A471BEC92604729F00C60F2A /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		A471BECE26047F4100C60F2A /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecar_InterviewMecarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -346,6 +350,8 @@
 				A471BE5E26045DF700C60F2A /* UIColor+Extension.swift */,
 				A471BE8E26045FAB00C60F2A /* UIFont+Extension.swift */,
 				A471BE93260468F400C60F2A /* UIView+Extension.swift */,
+				A471BEC92604729F00C60F2A /* UIImage+Extension.swift */,
+				A471BECE26047F4100C60F2A /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -666,6 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A471BECF26047F4100C60F2A /* UILabel+Extension.swift in Sources */,
 				A471BEB62604696300C60F2A /* AddPhotoViewController.swift in Sources */,
 				A471BE8F26045FAB00C60F2A /* UIFont+Extension.swift in Sources */,
 				A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */,
@@ -677,6 +684,7 @@
 				A471BEAF2604695900C60F2A /* SearchViewController.swift in Sources */,
 				A471BE9A2604693600C60F2A /* SignUpViewController.swift in Sources */,
 				A471BEA82604694E00C60F2A /* HomeViewController.swift in Sources */,
+				A471BECA2604729F00C60F2A /* UIImage+Extension.swift in Sources */,
 				A471BE4826045BCD00C60F2A /* Constant.swift in Sources */,
 				A471BEC42604697D00C60F2A /* ProfileViewController.swift in Sources */,
 				A471BEA12604694100C60F2A /* LoginViewController.swift in Sources */,

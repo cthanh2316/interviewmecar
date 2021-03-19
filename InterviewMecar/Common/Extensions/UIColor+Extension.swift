@@ -26,3 +26,27 @@ extension UIColor {
         )
     }
 }
+
+extension UIColor {
+    
+    static var borderColor: UIColor {
+        return UIColor.black
+    }
+    
+    static var loginBgColor: UIColor {
+        return UIColor.white
+    }
+    
+    static var loginTextColor: UIColor {
+        return UIColor.black
+    }
+    
+    static var registerBgColor: UIColor {
+        return UIColor.black
+    }
+    
+    static var registerTextColor: UIColor {
+        return UIColor.white
+    }
+    
+}
