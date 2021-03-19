@@ -28,8 +28,34 @@ enum Roboto : String {
     case CondensedRegular = "RobotoCondensed-Regular"
 }
 
+enum Comfortaa: String {
+    case Bold = "Comfortaa-Bold"
+    case Regular = "Comfortaa-Regular"
+    case Light = "Comfortaa-Light"
+}
+
 extension UIFont {
-    convenience init(style: Roboto, ofSize size: CGFloat) {
+    convenience init(styleRoboto style: Roboto, ofSize size: CGFloat) {
         self.init(name: style.rawValue, size: size)!
+    }
+    
+    convenience init(styleComfortaa style: Comfortaa, ofSize size: CGFloat) {
+        self.init(name: style.rawValue, size: size)!
+    }
+    
+    static var btnTitleFont: UIFont {
+        return UIFont(styleRoboto: .Black, ofSize: 13.0)
+    }
+    
+    static var titleFont: UIFont {
+        return UIFont(styleComfortaa: .Regular, ofSize: 36.0)
+    }
+    
+    static var lblName: UIFont {
+        return UIFont(styleRoboto: .Bold, ofSize: 13.0)
+    }
+    
+    static var lblSubName: UIFont {
+        return UIFont(styleRoboto: .Regular, ofSize: 11.0)
     }
 }

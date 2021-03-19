@@ -61,6 +61,11 @@
 		A471BEFB2604895600C60F2A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEFA2604895600C60F2A /* String+Extension.swift */; };
 		A471BF0026048AF000C60F2A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A471BF0226048AF000C60F2A /* Localizable.strings */; };
 		A471BF0B26048D4D00C60F2A /* AppConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BF0A26048D4D00C60F2A /* AppConfigure.swift */; };
+		A471BF102604979B00C60F2A /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BF0F2604979B00C60F2A /* UITextField+Extension.swift */; };
+		A471BF15260497FA00C60F2A /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BF14260497FA00C60F2A /* CGFloat+Extension.swift */; };
+		A471BF1E2604993100C60F2A /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BF1B2604993100C60F2A /* Comfortaa-Light.ttf */; };
+		A471BF1F2604993100C60F2A /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BF1C2604993100C60F2A /* Comfortaa-Regular.ttf */; };
+		A471BF202604993100C60F2A /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BF1D2604993100C60F2A /* Comfortaa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +148,11 @@
 		A471BF0126048AF000C60F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A471BF0626048AF400C60F2A /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A471BF0A26048D4D00C60F2A /* AppConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigure.swift; sourceTree = "<group>"; };
+		A471BF0F2604979B00C60F2A /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		A471BF14260497FA00C60F2A /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
+		A471BF1B2604993100C60F2A /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		A471BF1C2604993100C60F2A /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		A471BF1D2604993100C60F2A /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecar_InterviewMecarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -363,6 +373,8 @@
 				A471BEC92604729F00C60F2A /* UIImage+Extension.swift */,
 				A471BECE26047F4100C60F2A /* UILabel+Extension.swift */,
 				A471BEFA2604895600C60F2A /* String+Extension.swift */,
+				A471BF0F2604979B00C60F2A /* UITextField+Extension.swift */,
+				A471BF14260497FA00C60F2A /* CGFloat+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -397,6 +409,23 @@
 		A471BE6626045E5800C60F2A /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				A471BF1A2604992900C60F2A /* Comfortaa */,
+				A471BF192604991E00C60F2A /* Roboto */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A471BED7260482D400C60F2A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A471BF0226048AF000C60F2A /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		A471BF192604991E00C60F2A /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
 				A471BE6826045E7700C60F2A /* Roboto-Black.ttf */,
 				A471BE6F26045E7800C60F2A /* Roboto-BlackItalic.ttf */,
 				A471BE6726045E7700C60F2A /* Roboto-Bold.ttf */,
@@ -416,15 +445,17 @@
 				A471BE7526045E7800C60F2A /* RobotoCondensed-LightItalic.ttf */,
 				A471BE6E26045E7700C60F2A /* RobotoCondensed-Regular.ttf */,
 			);
-			path = Font;
+			path = Roboto;
 			sourceTree = "<group>";
 		};
-		A471BED7260482D400C60F2A /* Localization */ = {
+		A471BF1A2604992900C60F2A /* Comfortaa */ = {
 			isa = PBXGroup;
 			children = (
-				A471BF0226048AF000C60F2A /* Localizable.strings */,
+				A471BF1D2604993100C60F2A /* Comfortaa-Bold.ttf */,
+				A471BF1B2604993100C60F2A /* Comfortaa-Light.ttf */,
+				A471BF1C2604993100C60F2A /* Comfortaa-Regular.ttf */,
 			);
-			path = Localization;
+			path = Comfortaa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,12 +572,15 @@
 				A471BE7B26045E7800C60F2A /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				A471BE8926045E7800C60F2A /* Roboto-ThinItalic.ttf in Resources */,
 				A471BE8426045E7800C60F2A /* RobotoCondensed-Italic.ttf in Resources */,
+				A471BF202604993100C60F2A /* Comfortaa-Bold.ttf in Resources */,
+				A471BF1E2604993100C60F2A /* Comfortaa-Light.ttf in Resources */,
 				A471BE9B2604693600C60F2A /* SignUpViewController.xib in Resources */,
 				A471BE7F26045E7800C60F2A /* Roboto-LightItalic.ttf in Resources */,
 				A471BDD42604545500C60F2A /* LaunchScreen.storyboard in Resources */,
 				A471BEA22604694100C60F2A /* LoginViewController.xib in Resources */,
 				A471BE5526045DA500C60F2A /* IntoduceViewController.xib in Resources */,
 				A471BEBE2604696F00C60F2A /* MessageViewController.xib in Resources */,
+				A471BF1F2604993100C60F2A /* Comfortaa-Regular.ttf in Resources */,
 				A471BE8A26045E7800C60F2A /* Roboto-Medium.ttf in Resources */,
 				A471BE8226045E7800C60F2A /* Roboto-Light.ttf in Resources */,
 				A471BEB02604695900C60F2A /* SearchViewController.xib in Resources */,
@@ -698,6 +732,8 @@
 				A471BEB62604696300C60F2A /* AddPhotoViewController.swift in Sources */,
 				A471BE8F26045FAB00C60F2A /* UIFont+Extension.swift in Sources */,
 				A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */,
+				A471BF15260497FA00C60F2A /* CGFloat+Extension.swift in Sources */,
+				A471BF102604979B00C60F2A /* UITextField+Extension.swift in Sources */,
 				A471BE94260468F400C60F2A /* UIView+Extension.swift in Sources */,
 				A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */,
 				A471BE4D26045BD600C60F2A /* Enums.swift in Sources */,

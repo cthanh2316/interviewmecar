@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // TODO: Check state login to set rootview
         window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
         self.window = window
+        AppConfigure.currentLang = "en"
         window.makeKeyAndVisible()
     }
     

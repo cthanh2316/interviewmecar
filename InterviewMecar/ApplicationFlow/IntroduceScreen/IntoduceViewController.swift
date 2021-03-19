@@ -29,25 +29,25 @@ class IntoduceViewController: UIViewController {
         imvAuthorAvatar.image = UIImage.authorAvatar
         imvAuthorAvatar.circular()
         
-        lblAuthorName.font = UIFont(style: .Bold, ofSize: 13.0)
-        lblAuthorSigned.font = UIFont(style: .Regular, ofSize: 11.0)
+        lblAuthorName.font = UIFont.lblName
+        lblAuthorSigned.font = UIFont.lblSubName
         
-        btnLogin.cornerRadius = 6.0
-        btnLogin.borderWidth = 2.0
+        btnLogin.cornerRadius = .btnRadius
+        btnLogin.borderWidth = .borderWidth
         btnLogin.borderColor = .borderColor
         btnLogin.backgroundColor = .loginBgColor
         btnLogin.setTitleColor(.loginTextColor, for: .normal)
-        btnLogin.titleLabel?.font = UIFont(style: .Black, ofSize: 13.0)
-        btnLogin.titleLabel?.addCharacterSpacing(kernValue: 0.52)
-        btnLogin.setTitle("LOG IN".localized(), for: .normal)
+        btnLogin.titleLabel?.font = UIFont.btnTitleFont
+        btnLogin.titleLabel?.addCharacterSpacing(kernValue: .kernBtnValue)
+        btnLogin.setTitle("Log in".localized().uppercased(), for: .normal)
         
-        btnRegister.cornerRadius = 6.0
+        btnRegister.cornerRadius = .btnRadius
         btnRegister.borderWidth = 0.0
         btnRegister.backgroundColor = .registerBgColor
         btnRegister.setTitleColor(.registerTextColor, for: .normal)
-        btnRegister.titleLabel?.font = UIFont(style: .Black, ofSize: 13.0)
-        btnRegister.titleLabel?.addCharacterSpacing(kernValue: 0.52)
-        btnRegister.setTitle("REGISTER".localized(), for: .normal)
+        btnRegister.titleLabel?.font = UIFont.btnTitleFont
+        btnRegister.titleLabel?.addCharacterSpacing(kernValue: .kernBtnValue)
+        btnRegister.setTitle("Register".localized().uppercased(), for: .normal)
 
     }
     
@@ -56,6 +56,8 @@ class IntoduceViewController: UIViewController {
     }
     
     @IBAction func onActionRegister(_ sender: Any) {
-        // TODO: Present Register screen
+        let signupVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        signupVC.modalPresentationStyle = .overFullScreen
+        self.present(signupVC, animated: true)
     }
 }
