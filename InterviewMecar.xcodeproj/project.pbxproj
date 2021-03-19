@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,50 @@
 		791796A4EE6F2A334C52515C /* Pods_InterviewMecar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00573270EA84B2DB1E1CC28 /* Pods_InterviewMecar.framework */; };
 		A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC72604545500C60F2A /* AppDelegate.swift */; };
 		A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC92604545500C60F2A /* SceneDelegate.swift */; };
-		A471BDCC2604545500C60F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDCB2604545500C60F2A /* ViewController.swift */; };
-		A471BDCF2604545500C60F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471BDCD2604545500C60F2A /* Main.storyboard */; };
 		A471BDD12604545500C60F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471BDD02604545500C60F2A /* Assets.xcassets */; };
 		A471BDD42604545500C60F2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A471BDD22604545500C60F2A /* LaunchScreen.storyboard */; };
 		A471BDDF2604545600C60F2A /* InterviewMecarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDDE2604545600C60F2A /* InterviewMecarTests.swift */; };
 		A471BDEA2604545600C60F2A /* InterviewMecarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDE92604545600C60F2A /* InterviewMecarUITests.swift */; };
+		A471BE392604597000C60F2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A471BE382604597000C60F2A /* GoogleService-Info.plist */; };
+		A471BE4826045BCD00C60F2A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE4726045BCD00C60F2A /* Constant.swift */; };
+		A471BE4D26045BD600C60F2A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE4C26045BD600C60F2A /* Enums.swift */; };
+		A471BE5426045DA500C60F2A /* IntoduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE5226045DA500C60F2A /* IntoduceViewController.swift */; };
+		A471BE5526045DA500C60F2A /* IntoduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BE5326045DA500C60F2A /* IntoduceViewController.xib */; };
+		A471BE5F26045DF700C60F2A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE5E26045DF700C60F2A /* UIColor+Extension.swift */; };
+		A471BE7926045E7800C60F2A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6726045E7700C60F2A /* Roboto-Bold.ttf */; };
+		A471BE7A26045E7800C60F2A /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6826045E7700C60F2A /* Roboto-Black.ttf */; };
+		A471BE7B26045E7800C60F2A /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6926045E7700C60F2A /* RobotoCondensed-BoldItalic.ttf */; };
+		A471BE7C26045E7800C60F2A /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6A26045E7700C60F2A /* Roboto-Italic.ttf */; };
+		A471BE7D26045E7800C60F2A /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6B26045E7700C60F2A /* RobotoCondensed-Bold.ttf */; };
+		A471BE7E26045E7800C60F2A /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6C26045E7700C60F2A /* Roboto-BoldItalic.ttf */; };
+		A471BE7F26045E7800C60F2A /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6D26045E7700C60F2A /* Roboto-LightItalic.ttf */; };
+		A471BE8026045E7800C60F2A /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6E26045E7700C60F2A /* RobotoCondensed-Regular.ttf */; };
+		A471BE8126045E7800C60F2A /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE6F26045E7800C60F2A /* Roboto-BlackItalic.ttf */; };
+		A471BE8226045E7800C60F2A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7026045E7800C60F2A /* Roboto-Light.ttf */; };
+		A471BE8326045E7800C60F2A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7126045E7800C60F2A /* Roboto-Regular.ttf */; };
+		A471BE8426045E7800C60F2A /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7226045E7800C60F2A /* RobotoCondensed-Italic.ttf */; };
+		A471BE8526045E7800C60F2A /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7326045E7800C60F2A /* RobotoCondensed-Light.ttf */; };
+		A471BE8626045E7800C60F2A /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7426045E7800C60F2A /* Roboto-MediumItalic.ttf */; };
+		A471BE8726045E7800C60F2A /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7526045E7800C60F2A /* RobotoCondensed-LightItalic.ttf */; };
+		A471BE8826045E7800C60F2A /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7626045E7800C60F2A /* Roboto-Thin.ttf */; };
+		A471BE8926045E7800C60F2A /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7726045E7800C60F2A /* Roboto-ThinItalic.ttf */; };
+		A471BE8A26045E7800C60F2A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BE7826045E7800C60F2A /* Roboto-Medium.ttf */; };
+		A471BE8F26045FAB00C60F2A /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE8E26045FAB00C60F2A /* UIFont+Extension.swift */; };
+		A471BE94260468F400C60F2A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE93260468F400C60F2A /* UIView+Extension.swift */; };
+		A471BE9A2604693600C60F2A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE982604693600C60F2A /* SignUpViewController.swift */; };
+		A471BE9B2604693600C60F2A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BE992604693600C60F2A /* SignUpViewController.xib */; };
+		A471BEA12604694100C60F2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BE9F2604694100C60F2A /* LoginViewController.swift */; };
+		A471BEA22604694100C60F2A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEA02604694100C60F2A /* LoginViewController.xib */; };
+		A471BEA82604694E00C60F2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEA62604694E00C60F2A /* HomeViewController.swift */; };
+		A471BEA92604694E00C60F2A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEA72604694E00C60F2A /* HomeViewController.xib */; };
+		A471BEAF2604695900C60F2A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEAD2604695900C60F2A /* SearchViewController.swift */; };
+		A471BEB02604695900C60F2A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEAE2604695900C60F2A /* SearchViewController.xib */; };
+		A471BEB62604696300C60F2A /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEB42604696300C60F2A /* AddPhotoViewController.swift */; };
+		A471BEB72604696300C60F2A /* AddPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEB52604696300C60F2A /* AddPhotoViewController.xib */; };
+		A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEBB2604696F00C60F2A /* MessageViewController.swift */; };
+		A471BEBE2604696F00C60F2A /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEBC2604696F00C60F2A /* MessageViewController.xib */; };
+		A471BEC42604697D00C60F2A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEC22604697D00C60F2A /* ProfileViewController.swift */; };
+		A471BEC52604697D00C60F2A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEC32604697D00C60F2A /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +82,6 @@
 		A471BDC42604545500C60F2A /* InterviewMecar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMecar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDC72604545500C60F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471BDC92604545500C60F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A471BDCB2604545500C60F2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A471BDCE2604545500C60F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A471BDD02604545500C60F2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A471BDD32604545500C60F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A471BDD52604545500C60F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +91,46 @@
 		A471BDE52604545600C60F2A /* InterviewMecarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewMecarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDE92604545600C60F2A /* InterviewMecarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewMecarUITests.swift; sourceTree = "<group>"; };
 		A471BDEB2604545600C60F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A471BE382604597000C60F2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A471BE4726045BCD00C60F2A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A471BE4C26045BD600C60F2A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A471BE5226045DA500C60F2A /* IntoduceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntoduceViewController.swift; sourceTree = "<group>"; };
+		A471BE5326045DA500C60F2A /* IntoduceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntoduceViewController.xib; sourceTree = "<group>"; };
+		A471BE5E26045DF700C60F2A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A471BE6726045E7700C60F2A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		A471BE6826045E7700C60F2A /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A471BE6926045E7700C60F2A /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A471BE6A26045E7700C60F2A /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		A471BE6B26045E7700C60F2A /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		A471BE6C26045E7700C60F2A /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A471BE6D26045E7700C60F2A /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		A471BE6E26045E7700C60F2A /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		A471BE6F26045E7800C60F2A /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A471BE7026045E7800C60F2A /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A471BE7126045E7800C60F2A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		A471BE7226045E7800C60F2A /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		A471BE7326045E7800C60F2A /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		A471BE7426045E7800C60F2A /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A471BE7526045E7800C60F2A /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		A471BE7626045E7800C60F2A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		A471BE7726045E7800C60F2A /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		A471BE7826045E7800C60F2A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		A471BE8E26045FAB00C60F2A /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A471BE93260468F400C60F2A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A471BE982604693600C60F2A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A471BE992604693600C60F2A /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		A471BE9F2604694100C60F2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A471BEA02604694100C60F2A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A471BEA62604694E00C60F2A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A471BEA72604694E00C60F2A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A471BEAD2604695900C60F2A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A471BEAE2604695900C60F2A /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		A471BEB42604696300C60F2A /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		A471BEB52604696300C60F2A /* AddPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotoViewController.xib; sourceTree = "<group>"; };
+		A471BEBB2604696F00C60F2A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		A471BEBC2604696F00C60F2A /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		A471BEC22604697D00C60F2A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A471BEC32604697D00C60F2A /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecar_InterviewMecarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +177,6 @@
 				765A961F43AF46D3D4C93CFF /* Pods-InterviewMecarTests.debug.xcconfig */,
 				1598463C317D968D15DB32D3 /* Pods-InterviewMecarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,13 +215,10 @@
 		A471BDC62604545500C60F2A /* InterviewMecar */ = {
 			isa = PBXGroup;
 			children = (
-				A471BDC72604545500C60F2A /* AppDelegate.swift */,
-				A471BDC92604545500C60F2A /* SceneDelegate.swift */,
-				A471BDCB2604545500C60F2A /* ViewController.swift */,
-				A471BDCD2604545500C60F2A /* Main.storyboard */,
-				A471BDD02604545500C60F2A /* Assets.xcassets */,
-				A471BDD22604545500C60F2A /* LaunchScreen.storyboard */,
-				A471BDD52604545500C60F2A /* Info.plist */,
+				A471BE00260455FF00C60F2A /* AppDelegate */,
+				A471BE012604560800C60F2A /* Resources */,
+				A471BE4526045B8700C60F2A /* Common */,
+				A471BE192604563600C60F2A /* ApplicationFlow */,
 			);
 			path = InterviewMecar;
 			sourceTree = "<group>";
@@ -169,6 +241,167 @@
 			path = InterviewMecarUITests;
 			sourceTree = "<group>";
 		};
+		A471BE00260455FF00C60F2A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A471BDC72604545500C60F2A /* AppDelegate.swift */,
+				A471BDC92604545500C60F2A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A471BE012604560800C60F2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE6626045E5800C60F2A /* Font */,
+				A471BDD02604545500C60F2A /* Assets.xcassets */,
+				A471BDD52604545500C60F2A /* Info.plist */,
+				A471BE382604597000C60F2A /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A471BE192604563600C60F2A /* ApplicationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE1A2604563F00C60F2A /* SplashScreen */,
+				A471BE5126045C6F00C60F2A /* IntroduceScreen */,
+				A471BE5D26045DC100C60F2A /* SignUpScreen */,
+				A471BE5C26045DB900C60F2A /* LoginScreen */,
+				A471BE3D26045B0200C60F2A /* HomeScreen */,
+				A471BE3E26045B0A00C60F2A /* SearchScreen */,
+				A471BE3F26045B2700C60F2A /* AddPhotoScreen */,
+				A471BE4026045B3200C60F2A /* MessageScreen */,
+				A471BE4126045B4700C60F2A /* ProfileScreen */,
+			);
+			path = ApplicationFlow;
+			sourceTree = "<group>";
+		};
+		A471BE1A2604563F00C60F2A /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BDD22604545500C60F2A /* LaunchScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		A471BE3D26045B0200C60F2A /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BEA62604694E00C60F2A /* HomeViewController.swift */,
+				A471BEA72604694E00C60F2A /* HomeViewController.xib */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		A471BE3E26045B0A00C60F2A /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BEAD2604695900C60F2A /* SearchViewController.swift */,
+				A471BEAE2604695900C60F2A /* SearchViewController.xib */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		A471BE3F26045B2700C60F2A /* AddPhotoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BEB42604696300C60F2A /* AddPhotoViewController.swift */,
+				A471BEB52604696300C60F2A /* AddPhotoViewController.xib */,
+			);
+			path = AddPhotoScreen;
+			sourceTree = "<group>";
+		};
+		A471BE4026045B3200C60F2A /* MessageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BEBB2604696F00C60F2A /* MessageViewController.swift */,
+				A471BEBC2604696F00C60F2A /* MessageViewController.xib */,
+			);
+			path = MessageScreen;
+			sourceTree = "<group>";
+		};
+		A471BE4126045B4700C60F2A /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BEC22604697D00C60F2A /* ProfileViewController.swift */,
+				A471BEC32604697D00C60F2A /* ProfileViewController.xib */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		A471BE4526045B8700C60F2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE4626045BA600C60F2A /* Extensions */,
+				A471BE4726045BCD00C60F2A /* Constant.swift */,
+				A471BE4C26045BD600C60F2A /* Enums.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A471BE4626045BA600C60F2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE5E26045DF700C60F2A /* UIColor+Extension.swift */,
+				A471BE8E26045FAB00C60F2A /* UIFont+Extension.swift */,
+				A471BE93260468F400C60F2A /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A471BE5126045C6F00C60F2A /* IntroduceScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE5226045DA500C60F2A /* IntoduceViewController.swift */,
+				A471BE5326045DA500C60F2A /* IntoduceViewController.xib */,
+			);
+			path = IntroduceScreen;
+			sourceTree = "<group>";
+		};
+		A471BE5C26045DB900C60F2A /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE9F2604694100C60F2A /* LoginViewController.swift */,
+				A471BEA02604694100C60F2A /* LoginViewController.xib */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		A471BE5D26045DC100C60F2A /* SignUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE982604693600C60F2A /* SignUpViewController.swift */,
+				A471BE992604693600C60F2A /* SignUpViewController.xib */,
+			);
+			path = SignUpScreen;
+			sourceTree = "<group>";
+		};
+		A471BE6626045E5800C60F2A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A471BE6826045E7700C60F2A /* Roboto-Black.ttf */,
+				A471BE6F26045E7800C60F2A /* Roboto-BlackItalic.ttf */,
+				A471BE6726045E7700C60F2A /* Roboto-Bold.ttf */,
+				A471BE6C26045E7700C60F2A /* Roboto-BoldItalic.ttf */,
+				A471BE6A26045E7700C60F2A /* Roboto-Italic.ttf */,
+				A471BE7026045E7800C60F2A /* Roboto-Light.ttf */,
+				A471BE6D26045E7700C60F2A /* Roboto-LightItalic.ttf */,
+				A471BE7826045E7800C60F2A /* Roboto-Medium.ttf */,
+				A471BE7426045E7800C60F2A /* Roboto-MediumItalic.ttf */,
+				A471BE7126045E7800C60F2A /* Roboto-Regular.ttf */,
+				A471BE7626045E7800C60F2A /* Roboto-Thin.ttf */,
+				A471BE7726045E7800C60F2A /* Roboto-ThinItalic.ttf */,
+				A471BE6B26045E7700C60F2A /* RobotoCondensed-Bold.ttf */,
+				A471BE6926045E7700C60F2A /* RobotoCondensed-BoldItalic.ttf */,
+				A471BE7226045E7800C60F2A /* RobotoCondensed-Italic.ttf */,
+				A471BE7326045E7800C60F2A /* RobotoCondensed-Light.ttf */,
+				A471BE7526045E7800C60F2A /* RobotoCondensed-LightItalic.ttf */,
+				A471BE6E26045E7700C60F2A /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +413,7 @@
 				A471BDC02604545500C60F2A /* Sources */,
 				A471BDC12604545500C60F2A /* Frameworks */,
 				A471BDC22604545500C60F2A /* Resources */,
+				6B7DCD27F6917CDC262F7D27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +451,7 @@
 				A471BDE12604545600C60F2A /* Sources */,
 				A471BDE22604545600C60F2A /* Frameworks */,
 				A471BDE32604545600C60F2A /* Resources */,
+				E7B7950383C44188443C1B50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,9 +510,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A471BE8726045E7800C60F2A /* RobotoCondensed-LightItalic.ttf in Resources */,
+				A471BE8526045E7800C60F2A /* RobotoCondensed-Light.ttf in Resources */,
+				A471BE7B26045E7800C60F2A /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				A471BE8926045E7800C60F2A /* Roboto-ThinItalic.ttf in Resources */,
+				A471BE8426045E7800C60F2A /* RobotoCondensed-Italic.ttf in Resources */,
+				A471BE9B2604693600C60F2A /* SignUpViewController.xib in Resources */,
+				A471BE7F26045E7800C60F2A /* Roboto-LightItalic.ttf in Resources */,
 				A471BDD42604545500C60F2A /* LaunchScreen.storyboard in Resources */,
+				A471BEA22604694100C60F2A /* LoginViewController.xib in Resources */,
+				A471BE5526045DA500C60F2A /* IntoduceViewController.xib in Resources */,
+				A471BEBE2604696F00C60F2A /* MessageViewController.xib in Resources */,
+				A471BE8A26045E7800C60F2A /* Roboto-Medium.ttf in Resources */,
+				A471BE8226045E7800C60F2A /* Roboto-Light.ttf in Resources */,
+				A471BEB02604695900C60F2A /* SearchViewController.xib in Resources */,
+				A471BE8826045E7800C60F2A /* Roboto-Thin.ttf in Resources */,
+				A471BE7D26045E7800C60F2A /* RobotoCondensed-Bold.ttf in Resources */,
+				A471BE7926045E7800C60F2A /* Roboto-Bold.ttf in Resources */,
+				A471BE8126045E7800C60F2A /* Roboto-BlackItalic.ttf in Resources */,
+				A471BE8026045E7800C60F2A /* RobotoCondensed-Regular.ttf in Resources */,
+				A471BE392604597000C60F2A /* GoogleService-Info.plist in Resources */,
+				A471BE7C26045E7800C60F2A /* Roboto-Italic.ttf in Resources */,
 				A471BDD12604545500C60F2A /* Assets.xcassets in Resources */,
-				A471BDCF2604545500C60F2A /* Main.storyboard in Resources */,
+				A471BE8326045E7800C60F2A /* Roboto-Regular.ttf in Resources */,
+				A471BE7E26045E7800C60F2A /* Roboto-BoldItalic.ttf in Resources */,
+				A471BEA92604694E00C60F2A /* HomeViewController.xib in Resources */,
+				A471BE8626045E7800C60F2A /* Roboto-MediumItalic.ttf in Resources */,
+				A471BE7A26045E7800C60F2A /* Roboto-Black.ttf in Resources */,
+				A471BEB72604696300C60F2A /* AddPhotoViewController.xib in Resources */,
+				A471BEC52604697D00C60F2A /* ProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +581,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6B7DCD27F6917CDC262F7D27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewMecar/Pods-InterviewMecar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewMecar/Pods-InterviewMecar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterviewMecar/Pods-InterviewMecar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B1376084CDC54B0085802D7C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +618,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7B7950383C44188443C1B50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA2210575F842763F74EB8E8 /* [CP] Check Pods Manifest.lock */ = {
@@ -371,9 +666,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A471BDCC2604545500C60F2A /* ViewController.swift in Sources */,
+				A471BEB62604696300C60F2A /* AddPhotoViewController.swift in Sources */,
+				A471BE8F26045FAB00C60F2A /* UIFont+Extension.swift in Sources */,
 				A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */,
+				A471BE94260468F400C60F2A /* UIView+Extension.swift in Sources */,
 				A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */,
+				A471BE4D26045BD600C60F2A /* Enums.swift in Sources */,
+				A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */,
+				A471BE5F26045DF700C60F2A /* UIColor+Extension.swift in Sources */,
+				A471BEAF2604695900C60F2A /* SearchViewController.swift in Sources */,
+				A471BE9A2604693600C60F2A /* SignUpViewController.swift in Sources */,
+				A471BEA82604694E00C60F2A /* HomeViewController.swift in Sources */,
+				A471BE4826045BCD00C60F2A /* Constant.swift in Sources */,
+				A471BEC42604697D00C60F2A /* ProfileViewController.swift in Sources */,
+				A471BEA12604694100C60F2A /* LoginViewController.swift in Sources */,
+				A471BE5426045DA500C60F2A /* IntoduceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,14 +716,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A471BDCD2604545500C60F2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A471BDCE2604545500C60F2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A471BDD22604545500C60F2A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -552,7 +851,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8753ZWXBB;
-				INFOPLIST_FILE = InterviewMecar/Info.plist;
+				INFOPLIST_FILE = InterviewMecar/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -572,7 +872,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8753ZWXBB;
-				INFOPLIST_FILE = InterviewMecar/Info.plist;
+				INFOPLIST_FILE = InterviewMecar/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

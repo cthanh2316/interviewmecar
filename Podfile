@@ -6,7 +6,8 @@ target 'InterviewMecar' do
   use_frameworks!
 
   # Pods for InterviewMecar
-
+  pod 'IQKeyboardManager'
+  pod 'Firebase/Auth'
   target 'InterviewMecarTests' do
     inherit! :search_paths
     # Pods for testing
