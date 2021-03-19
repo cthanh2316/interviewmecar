@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008DAB660B81A4068A08F74F /* Pods_InterviewMecar_InterviewMecarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */; };
+		3B8CD574FBB6812572811064 /* Pods_InterviewMecarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */; };
+		791796A4EE6F2A334C52515C /* Pods_InterviewMecar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00573270EA84B2DB1E1CC28 /* Pods_InterviewMecar.framework */; };
 		A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC72604545500C60F2A /* AppDelegate.swift */; };
 		A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC92604545500C60F2A /* SceneDelegate.swift */; };
 		A471BDCC2604545500C60F2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDCB2604545500C60F2A /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1598463C317D968D15DB32D3 /* Pods-InterviewMecarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecarTests.release.xcconfig"; path = "Target Support Files/Pods-InterviewMecarTests/Pods-InterviewMecarTests.release.xcconfig"; sourceTree = "<group>"; };
+		63B7A5B1F599F6C0D7C51408 /* Pods-InterviewMecar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar.release.xcconfig"; path = "Target Support Files/Pods-InterviewMecar/Pods-InterviewMecar.release.xcconfig"; sourceTree = "<group>"; };
+		765A961F43AF46D3D4C93CFF /* Pods-InterviewMecarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecarTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecarTests/Pods-InterviewMecarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A471BDC42604545500C60F2A /* InterviewMecar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMecar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDC72604545500C60F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471BDC92604545500C60F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		A471BDE52604545600C60F2A /* InterviewMecarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewMecarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDE92604545600C60F2A /* InterviewMecarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewMecarUITests.swift; sourceTree = "<group>"; };
 		A471BDEB2604545600C60F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecar_InterviewMecarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE20774811C96F56FC6E79A7 /* Pods-InterviewMecar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecar/Pods-InterviewMecar.debug.xcconfig"; sourceTree = "<group>"; };
+		E00573270EA84B2DB1E1CC28 /* Pods_InterviewMecar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E369C621A5697AE0A0EB9FAB /* Pods-InterviewMecar-InterviewMecarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar-InterviewMecarUITests.release.xcconfig"; path = "Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791796A4EE6F2A334C52515C /* Pods_InterviewMecar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8CD574FBB6812572811064 /* Pods_InterviewMecarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008DAB660B81A4068A08F74F /* Pods_InterviewMecar_InterviewMecarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		737A0C98774334A2BDC27825 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE20774811C96F56FC6E79A7 /* Pods-InterviewMecar.debug.xcconfig */,
+				63B7A5B1F599F6C0D7C51408 /* Pods-InterviewMecar.release.xcconfig */,
+				AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */,
+				E369C621A5697AE0A0EB9FAB /* Pods-InterviewMecar-InterviewMecarUITests.release.xcconfig */,
+				765A961F43AF46D3D4C93CFF /* Pods-InterviewMecarTests.debug.xcconfig */,
+				1598463C317D968D15DB32D3 /* Pods-InterviewMecarTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8972EFE9752E3A2043CB0C12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E00573270EA84B2DB1E1CC28 /* Pods_InterviewMecar.framework */,
+				AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */,
+				C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A471BDBB2604545500C60F2A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				A471BDDD2604545600C60F2A /* InterviewMecarTests */,
 				A471BDE82604545600C60F2A /* InterviewMecarUITests */,
 				A471BDC52604545500C60F2A /* Products */,
+				737A0C98774334A2BDC27825 /* Pods */,
+				8972EFE9752E3A2043CB0C12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A471BDEE2604545600C60F2A /* Build configuration list for PBXNativeTarget "InterviewMecar" */;
 			buildPhases = (
+				EA2210575F842763F74EB8E8 /* [CP] Check Pods Manifest.lock */,
 				A471BDC02604545500C60F2A /* Sources */,
 				A471BDC12604545500C60F2A /* Frameworks */,
 				A471BDC22604545500C60F2A /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A471BDF12604545600C60F2A /* Build configuration list for PBXNativeTarget "InterviewMecarTests" */;
 			buildPhases = (
+				615B7388652E4BCB9748A407 /* [CP] Check Pods Manifest.lock */,
 				A471BDD62604545600C60F2A /* Sources */,
 				A471BDD72604545600C60F2A /* Frameworks */,
 				A471BDD82604545600C60F2A /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A471BDF42604545600C60F2A /* Build configuration list for PBXNativeTarget "InterviewMecarUITests" */;
 			buildPhases = (
+				B1376084CDC54B0085802D7C /* [CP] Check Pods Manifest.lock */,
 				A471BDE12604545600C60F2A /* Sources */,
 				A471BDE22604545600C60F2A /* Frameworks */,
 				A471BDE32604545600C60F2A /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		615B7388652E4BCB9748A407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterviewMecarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1376084CDC54B0085802D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterviewMecar-InterviewMecarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2210575F842763F74EB8E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterviewMecar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A471BDC02604545500C60F2A /* Sources */ = {
@@ -433,6 +546,7 @@
 		};
 		A471BDEF2604545600C60F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE20774811C96F56FC6E79A7 /* Pods-InterviewMecar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +566,7 @@
 		};
 		A471BDF02604545600C60F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B7A5B1F599F6C0D7C51408 /* Pods-InterviewMecar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +586,7 @@
 		};
 		A471BDF22604545600C60F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765A961F43AF46D3D4C93CFF /* Pods-InterviewMecarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +609,7 @@
 		};
 		A471BDF32604545600C60F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1598463C317D968D15DB32D3 /* Pods-InterviewMecarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +632,7 @@
 		};
 		A471BDF52604545600C60F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +653,7 @@
 		};
 		A471BDF62604545600C60F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E369C621A5697AE0A0EB9FAB /* Pods-InterviewMecar-InterviewMecarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
