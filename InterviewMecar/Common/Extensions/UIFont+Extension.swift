@@ -58,4 +58,8 @@ extension UIFont {
     static var lblSubName: UIFont {
         return UIFont(styleRoboto: .Regular, ofSize: 11.0)
     }
+    
+    static var textFieldFont: UIFont {
+        return UIFont(styleRoboto: .Regular, ofSize: 15.0)
+    }
 }

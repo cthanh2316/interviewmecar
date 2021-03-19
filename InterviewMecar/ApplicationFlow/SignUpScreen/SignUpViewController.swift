@@ -17,6 +17,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        addActionDismissKeyboard()
     }
     
     private func configureView() {
@@ -28,8 +29,9 @@ class SignUpViewController: UIViewController {
         txtEmail.borderColor = .borderColor
         txtEmail.setLeftPaddingPoints(.leftRightPadding)
         txtEmail.setRightPaddingPoints(.leftRightPadding)
-        txtEmail.font = UIFont(styleRoboto: .Regular, ofSize: 15.0)
+        txtEmail.font = UIFont.textFieldFont
         txtEmail.placeholder = "yourname@email.com".localized()
+        txtEmail.delegate = self
         
         btnSignUp.setTitle("Sign up".localized().uppercased(), for: .normal)
         btnSignUp.titleLabel?.font = UIFont.btnTitleFont
@@ -76,6 +78,15 @@ class SignUpViewController: UIViewController {
     
     @IBAction func onActionSignUp(_ sender: Any) {
         // TODO: Register account
+    }
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let email = textField.text {
+            return email.isValidEmail
+        }
+        return true
     }
 }
 

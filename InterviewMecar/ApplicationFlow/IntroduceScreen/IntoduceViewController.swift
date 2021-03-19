@@ -52,7 +52,9 @@ class IntoduceViewController: UIViewController {
     }
     
     @IBAction func onActionLogin(_ sender: Any) {
-        // TODO: Present Login screen
+        let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        loginVC.modalPresentationStyle = .overFullScreen
+        self.present(loginVC, animated: true)
     }
     
     @IBAction func onActionRegister(_ sender: Any) {

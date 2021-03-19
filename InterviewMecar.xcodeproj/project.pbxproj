@@ -66,6 +66,7 @@
 		A471BF1E2604993100C60F2A /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BF1B2604993100C60F2A /* Comfortaa-Light.ttf */; };
 		A471BF1F2604993100C60F2A /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BF1C2604993100C60F2A /* Comfortaa-Regular.ttf */; };
 		A471BF202604993100C60F2A /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A471BF1D2604993100C60F2A /* Comfortaa-Bold.ttf */; };
+		A471BF252604AC6600C60F2A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BF242604AC6600C60F2A /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		A471BF1B2604993100C60F2A /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		A471BF1C2604993100C60F2A /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		A471BF1D2604993100C60F2A /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		A471BF242604AC6600C60F2A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AA3BCC39EEFB12B6D37D0D1E /* Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecar-InterviewMecarUITests/Pods-InterviewMecar-InterviewMecarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecar_InterviewMecarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewMecarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +377,7 @@
 				A471BEFA2604895600C60F2A /* String+Extension.swift */,
 				A471BF0F2604979B00C60F2A /* UITextField+Extension.swift */,
 				A471BF14260497FA00C60F2A /* CGFloat+Extension.swift */,
+				A471BF242604AC6600C60F2A /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -739,6 +742,7 @@
 				A471BE4D26045BD600C60F2A /* Enums.swift in Sources */,
 				A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */,
 				A471BE5F26045DF700C60F2A /* UIColor+Extension.swift in Sources */,
+				A471BF252604AC6600C60F2A /* UIViewController+Extension.swift in Sources */,
 				A471BEAF2604695900C60F2A /* SearchViewController.swift in Sources */,
 				A471BEFB2604895600C60F2A /* String+Extension.swift in Sources */,
 				A471BE9A2604693600C60F2A /* SignUpViewController.swift in Sources */,
