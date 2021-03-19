@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum AppConfig: String {
+    case Language = "current_lang"
+}

@@ -39,7 +39,7 @@ class IntoduceViewController: UIViewController {
         btnLogin.setTitleColor(.loginTextColor, for: .normal)
         btnLogin.titleLabel?.font = UIFont(style: .Black, ofSize: 13.0)
         btnLogin.titleLabel?.addCharacterSpacing(kernValue: 0.52)
-        btnLogin.setTitle("LOG IN", for: .normal)
+        btnLogin.setTitle("LOG IN".localized(), for: .normal)
         
         btnRegister.cornerRadius = 6.0
         btnRegister.borderWidth = 0.0
@@ -47,7 +47,7 @@ class IntoduceViewController: UIViewController {
         btnRegister.setTitleColor(.registerTextColor, for: .normal)
         btnRegister.titleLabel?.font = UIFont(style: .Black, ofSize: 13.0)
         btnRegister.titleLabel?.addCharacterSpacing(kernValue: 0.52)
-        btnRegister.setTitle("REGISTER", for: .normal)
+        btnRegister.setTitle("REGISTER".localized(), for: .normal)
 
     }
     
