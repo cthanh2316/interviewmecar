@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPhotoViewController">
             <connections>
                 <outlet property="btnSeeMore" destination="1zY-Aw-P4M" id="YIz-CN-pDS"/>
-                <outlet property="cstBottomScrollview" destination="hwS-cx-2a7" id="Gna-AZ-qQw"/>
+                <outlet property="cstBottomScrollview" destination="Aqw-mT-z9S" id="3jU-Fh-cQg"/>
                 <outlet property="cstHeightForContentView" destination="yBc-3v-88B" id="y3M-Ic-gxI"/>
                 <outlet property="cstHeightImvNewPhoto" destination="7LU-nu-t1F" id="p9m-lD-GHA"/>
                 <outlet property="imvAvatarAuthor" destination="hJ2-Pa-1Rt" id="ODV-ZN-aOt"/>
@@ -205,9 +205,9 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="c87-AO-kbw" secondAttribute="bottom" constant="83" id="Aqw-mT-z9S"/>
                 <constraint firstItem="c87-AO-kbw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="M2C-jH-gKC"/>
                 <constraint firstItem="c87-AO-kbw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZLX-xe-1Ea"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c87-AO-kbw" secondAttribute="bottom" constant="49" id="hwS-cx-2a7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c87-AO-kbw" secondAttribute="trailing" id="ydQ-2I-qKt"/>
             </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="153.34821428571428"/>

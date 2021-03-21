@@ -9,7 +9,7 @@ import UIKit
 
 class BaseTabBarController: UITabBarController {
     var customTabBar: CustomTabBar!
-    var tabBarHeight: CGFloat = 67.0
+    var tabBarHeight: CGFloat = .tabbarHeight
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +45,8 @@ class BaseTabBarController: UITabBarController {
             customTabBar.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor),
             customTabBar.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor),
             customTabBar.widthAnchor.constraint(equalToConstant: tabBar.frame.width),
-            customTabBar.heightAnchor.constraint(equalToConstant: tabBarHeight),
-            customTabBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            customTabBar.heightAnchor.constraint(equalToConstant: tabBarHeight + view.safeAreaInsets.bottom),
+            customTabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
 
         // Thêm các view controller tương ứng

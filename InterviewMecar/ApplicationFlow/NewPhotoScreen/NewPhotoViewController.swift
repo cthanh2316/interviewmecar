@@ -72,7 +72,7 @@ class NewPhotoViewController: UIViewController {
         }
         let leftClvContentSize = calculateContentSizeHeight(collectionView: leftClvPhotos, photos: leftPhotos)
         let rightClvContentSize = calculateContentSizeHeight(collectionView: rightClvPhotos, photos: rightPhotos)
-        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + (self.tabbar?.bounds.size.height ?? 0.0) + self.topbarHeight + loadMoreViewHeight + max(leftClvContentSize, rightClvContentSize)
+        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + self.topbarHeight + loadMoreViewHeight + max(leftClvContentSize, rightClvContentSize)
         self.view.layoutIfNeeded()
         leftClvPhotos.reloadData()
         rightClvPhotos.reloadData()
@@ -87,7 +87,7 @@ class NewPhotoViewController: UIViewController {
     }
     
     private func configureView() {
-        cstBottomScrollview.constant = self.tabbar?.bounds.size.height ?? 0.0
+        cstBottomScrollview.constant = CGFloat.tabbarHeight
         scrollView.delaysContentTouches = false
         leftClvPhotos.delegate = self
         leftClvPhotos.dataSource = self
@@ -129,7 +129,7 @@ class NewPhotoViewController: UIViewController {
         self.loadPhoto(from: newPhoto, to: self.imvNewPhoto)
         self.cstHeightImvNewPhoto.constant = CGFloat(newPhoto.height/newPhoto.width) * imvNewPhoto.bounds.size.width
         self.view.layoutIfNeeded()
-        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + (self.tabbar?.bounds.size.height ?? 0.0) + self.topbarHeight + loadMoreViewHeight
+        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + self.topbarHeight + loadMoreViewHeight
     }
     @IBAction func onActionSeeMore(_ sender: Any) {
         currentPage += 1
