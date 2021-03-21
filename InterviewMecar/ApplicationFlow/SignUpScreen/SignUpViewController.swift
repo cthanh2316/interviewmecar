@@ -105,10 +105,12 @@ class SignUpViewController: UIViewController {
     }
     
     private func signUp(email: String, password: String) {
+        self.showLoading()
         FirebaseManager.auth.createUser(email:email , password: password) { [weak self] (success, user, error) in
             guard let strongSelf = self else {
                 return
             }
+            strongSelf.hideLoading()
             if success {
                 self?.showAlert(title: "", message: "Sign up success".localized(), actionTitle: "Log in".localized().uppercased(), actionHandling: {
                     strongSelf.dismiss(animated: false) {

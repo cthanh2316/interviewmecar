@@ -65,10 +65,12 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         let style = ListProfileCell.allCases[indexPath.row]
         switch style {
         case .signOut:
+            self.showLoading()
             FirebaseManager.auth.signOut { [weak self] (success, error) in
                 guard let strongSelf = self else {
                     return
                 }
+                strongSelf.hideLoading()
                 if success {
                     if let sceneDelegate = strongSelf.view.window?.windowScene?.delegate as? SceneDelegate {
                         sceneDelegate.handleLogout()

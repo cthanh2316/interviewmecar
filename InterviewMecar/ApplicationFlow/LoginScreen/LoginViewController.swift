@@ -59,10 +59,12 @@ class LoginViewController: UIViewController {
     }
     
     private func signIn(email: String, password: String) {
+        self.showLoading()
         FirebaseManager.auth.signIn(email: email, pass: password) { [weak self] (success, error) in
             guard let strongSelf = self else {
                 return
             }
+            strongSelf.hideLoading()
             if success {
                 strongSelf.delegate?.loginSuccess()
             } else {

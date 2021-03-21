@@ -10,7 +10,7 @@ import UIKit
 extension UIViewController {
     
     var topbarHeight: CGFloat {
-        return UIApplication.shared.statusBarFrame.size.height +
+        return (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0) +
             (self.navigationController?.navigationBar.frame.height ?? 0.0)
     }
     
@@ -33,5 +33,23 @@ extension UIViewController {
     
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
+    }
+    
+    func showLoading(message: String = "Please wait...".localized()) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = UIActivityIndicatorView.Style.medium
+        loadingIndicator.startAnimating();
+
+        alert.view.addSubview(loadingIndicator)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func hideLoading() {
+        if let vc = self.presentedViewController, vc is UIAlertController {
+            vc.dismiss(animated: false, completion: nil)
+        }
     }
 }
