@@ -66,4 +66,8 @@ extension UIFont {
     static var sectionTitleFont: UIFont {
         return UIFont(styleRoboto: .Black, ofSize: 13.0)
     }
+    
+    static var profileTitleFont: UIFont {
+        return UIFont(styleRoboto: .Regular, ofSize: 15.0)
+    }
 }

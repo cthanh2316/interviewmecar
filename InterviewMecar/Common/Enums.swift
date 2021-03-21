@@ -16,3 +16,9 @@ enum CollectionViewCellName: String {
     
     static var photo = photoCell.rawValue
 }
+
+enum TableviewCellName: String {
+    case ProfileCell = "ProfileTableviewCell"
+    
+    static var profile = ProfileCell.rawValue
+}

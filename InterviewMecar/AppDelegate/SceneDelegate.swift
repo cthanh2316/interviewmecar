@@ -28,6 +28,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func gotoTabbarController() {
         window?.rootViewController = BaseTabBarController()
     }
+    
+    func handleLogout() {
+        window?.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

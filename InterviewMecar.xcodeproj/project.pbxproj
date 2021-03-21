@@ -18,6 +18,8 @@
 		A43FD751260651120016B9AA /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD750260651120016B9AA /* CustomTabbar.swift */; };
 		A43FD7742606D39B0016B9AA /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD7732606D39B0016B9AA /* PhotoModel.swift */; };
 		A462BE2F260729C6007701CC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462BE2E260729C6007701CC /* FirebaseManager.swift */; };
+		A462BE52260740DD007701CC /* ProfileTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462BE50260740DD007701CC /* ProfileTableviewCell.swift */; };
+		A462BE53260740DD007701CC /* ProfileTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A462BE51260740DD007701CC /* ProfileTableviewCell.xib */; };
 		A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC72604545500C60F2A /* AppDelegate.swift */; };
 		A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC92604545500C60F2A /* SceneDelegate.swift */; };
 		A471BDD12604545500C60F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471BDD02604545500C60F2A /* Assets.xcassets */; };
@@ -106,6 +108,8 @@
 		A43FD750260651120016B9AA /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		A43FD7732606D39B0016B9AA /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		A462BE2E260729C6007701CC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		A462BE50260740DD007701CC /* ProfileTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableviewCell.swift; sourceTree = "<group>"; };
+		A462BE51260740DD007701CC /* ProfileTableviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableviewCell.xib; sourceTree = "<group>"; };
 		A471BDC42604545500C60F2A /* InterviewMecar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMecar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDC72604545500C60F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471BDC92604545500C60F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -297,6 +301,15 @@
 			path = FirebaseManager;
 			sourceTree = "<group>";
 		};
+		A462BE4F260740AC007701CC /* ProfileTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A462BE50260740DD007701CC /* ProfileTableviewCell.swift */,
+				A462BE51260740DD007701CC /* ProfileTableviewCell.xib */,
+			);
+			path = ProfileTableviewCell;
+			sourceTree = "<group>";
+		};
 		A471BDBB2604545500C60F2A = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +447,7 @@
 		A471BE4126045B4700C60F2A /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A462BE4F260740AC007701CC /* ProfileTableviewCell */,
 				A471BEC22604697D00C60F2A /* ProfileViewController.swift */,
 				A471BEC32604697D00C60F2A /* ProfileViewController.xib */,
 			);
@@ -687,6 +701,7 @@
 				A471BE8326045E7800C60F2A /* Roboto-Regular.ttf in Resources */,
 				A471BE7E26045E7800C60F2A /* Roboto-BoldItalic.ttf in Resources */,
 				A471BEA92604694E00C60F2A /* HomeViewController.xib in Resources */,
+				A462BE53260740DD007701CC /* ProfileTableviewCell.xib in Resources */,
 				A471BF0026048AF000C60F2A /* Localizable.strings in Resources */,
 				A471BE8626045E7800C60F2A /* Roboto-MediumItalic.ttf in Resources */,
 				A471BE7A26045E7800C60F2A /* Roboto-Black.ttf in Resources */,
@@ -843,6 +858,7 @@
 				A471BEFB2604895600C60F2A /* String+Extension.swift in Sources */,
 				A471BE9A2604693600C60F2A /* SignUpViewController.swift in Sources */,
 				A471BEA82604694E00C60F2A /* HomeViewController.swift in Sources */,
+				A462BE52260740DD007701CC /* ProfileTableviewCell.swift in Sources */,
 				A471BECA2604729F00C60F2A /* UIImage+Extension.swift in Sources */,
 				A471BE4826045BCD00C60F2A /* Constant.swift in Sources */,
 				A471BEC42604697D00C60F2A /* ProfileViewController.swift in Sources */,

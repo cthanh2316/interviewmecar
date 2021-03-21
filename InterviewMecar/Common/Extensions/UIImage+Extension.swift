@@ -48,6 +48,10 @@ extension UIImage {
     static var placeholderImage: UIImage {
         return UIImage(named: "placeholder-image")!
     }
+    
+    static var signOutImage: UIImage {
+        return UIImage(named: "Icon_Signout")!
+    }
 
 }
 

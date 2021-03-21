@@ -34,4 +34,14 @@ class FirebaseAuthManager {
             }
         }
     }
+    
+    func signOut(completionBlock: @escaping (_ success: Bool, _ error: Error?) -> Void) {
+        do {
+            try Auth.auth().signOut()
+            completionBlock(true, nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            completionBlock(false, signOutError)
+        }
+    }
 }
