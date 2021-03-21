@@ -7,8 +7,17 @@
 
 import Foundation
 
+enum Languages: String {
+    case english = "en"
+    case vietnamese = "vi"
+}
+
 enum AppConfig: String {
-    case Language = "current_lang"
+    case LanguagesKey = "current_lang"
+}
+
+enum NotificationName {
+    static let changedLanguages = "changedLanguages"
 }
 
 enum CollectionViewCellName: String {

@@ -52,6 +52,10 @@ extension UIImage {
     static var signOutImage: UIImage {
         return UIImage(named: "Icon_Signout")!
     }
+    
+    static var changeLanguagesImage: UIImage {
+        return UIImage(named: "Icon_ChangeLanguages")!
+    }
 
 }
 

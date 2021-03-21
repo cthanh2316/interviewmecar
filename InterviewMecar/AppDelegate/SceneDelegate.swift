@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.overrideUserInterfaceStyle = .light
         window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
         self.window = window
-        AppConfigure.currentLang = "en"
         window.makeKeyAndVisible()
     }
     

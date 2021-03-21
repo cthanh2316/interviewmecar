@@ -9,11 +9,16 @@ import UIKit
 
 enum ListProfileCell: String, CaseIterable {
     case signOut = "Sign out"
+    case changeLanguages = "Change languages"
 }
 
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var tbvProfile: UITableView!
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +34,16 @@ class ProfileViewController: UIViewController {
         tbvProfile.dataSource = self
         tbvProfile.tableFooterView = UIView()
         tbvProfile.register(UINib(nibName: TableviewCellName.profile, bundle: nil), forCellReuseIdentifier: TableviewCellName.profile)
+                
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.reloadData),
+            name: Notification.Name(NotificationName.changedLanguages),
+            object: nil)
+    }
+    
+    @objc private func reloadData() {
+        self.tbvProfile.reloadData()
     }
 
 }
@@ -62,7 +77,17 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                     strongSelf.showAlert(title: "", message: error?.localizedDescription ?? "")
                 }
             }
+        case .changeLanguages:
+            if AppConfigure.currentLang == .vietnamese {
+                AppConfigure.currentLang = .english
+            } else {
+                AppConfigure.currentLang = .vietnamese
+            }
+            UserDefaults.standard.synchronize()
+            NotificationCenter.default.post(name: Notification.Name(NotificationName.changedLanguages), object: nil)
+            break
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

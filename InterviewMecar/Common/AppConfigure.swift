@@ -8,15 +8,15 @@
 import Foundation
 
 struct AppConfigure {
-    static var currentLang : String {
+    static var currentLang : Languages {
         get {
-            guard let lang = UserDefaults.standard.value(forKey: AppConfig.Language.rawValue) else {
-                return "en"
+            guard let lang = UserDefaults.standard.value(forKey: AppConfig.LanguagesKey.rawValue) else {
+                return Languages.english
             }
-            return lang as! String
+            return Languages(rawValue: lang as! String) ?? .english
         }
         set {
-            UserDefaults.standard.setValue(newValue, forKey: AppConfig.Language.rawValue)
+            UserDefaults.standard.setValue(newValue.rawValue, forKey: AppConfig.LanguagesKey.rawValue)
         }
     }
 }

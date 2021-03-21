@@ -45,10 +45,14 @@ class NewPhotoViewController: UIViewController {
         }
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
         loadNewImage()
+        configureView()
         createTempData()
     }
     
@@ -89,6 +93,9 @@ class NewPhotoViewController: UIViewController {
     private func configureView() {
         cstBottomScrollview.constant = CGFloat.tabbarHeight
         scrollView.delaysContentTouches = false
+        
+        imvAvatarAuthor.circular()
+        
         leftClvPhotos.delegate = self
         leftClvPhotos.dataSource = self
         leftClvPhotos.register(UINib(nibName: CollectionViewCellName.photo, bundle: nil), forCellWithReuseIdentifier: CollectionViewCellName.photo)
@@ -97,7 +104,6 @@ class NewPhotoViewController: UIViewController {
         rightClvPhotos.dataSource = self
         rightClvPhotos.register(UINib(nibName: CollectionViewCellName.photo, bundle: nil), forCellWithReuseIdentifier: CollectionViewCellName.photo)
         
-        lblTitle.text = "Discover".localized()
         lblTitle.font = UIFont.titleFont
         lblTitle.addCharacterSpacing(kernValue: .kernTitleValue)
         
@@ -106,37 +112,56 @@ class NewPhotoViewController: UIViewController {
         lblAuthorSigned.font = .lblSubName
         lblAuthorSigned.textColor = .lblSubnameColor
         
-        lblWhatsNew.text = "What's new today".localized().uppercased()
         lblWhatsNew.font = UIFont.sectionTitleFont
         lblWhatsNew.addCharacterSpacing(kernValue: .kernTitleValue)
         
-        lblBrowseAll.text = "Browse all".localized().uppercased()
         lblBrowseAll.font = UIFont.sectionTitleFont
         lblBrowseAll.addCharacterSpacing(kernValue: .kernTitleValue)
         
-        btnSeeMore.setTitle("See more".localized().uppercased(), for: .normal)
         btnSeeMore.titleLabel?.font = UIFont.btnTitleFont
         btnSeeMore.titleLabel?.addCharacterSpacing(kernValue: .kernBtnValue)
         btnSeeMore.setTitleColor(.lightBtnTextColor, for: .normal)
         btnSeeMore.borderWidth = .borderWidth
         btnSeeMore.borderColor = .borderColor
+        
+        loadText()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.loadText),
+            name: Notification.Name(NotificationName.changedLanguages),
+            object: nil)
+    }
+    
+    @objc private func loadText() {
+        lblTitle.text = "Discover".localized()
+        lblWhatsNew.text = "What's new today".localized().uppercased()
+        lblBrowseAll.text = "Browse all".localized().uppercased()
+        btnSeeMore.setTitle("See more".localized().uppercased(), for: .normal)
     }
     
     private func loadNewImage() {
         // Data test
-        let newPhoto = PhotoModel(width: 512, height: 512, url: "https://homepages.cae.wisc.edu/~ece533/images/airplane.png")
+        var newPhoto = PhotoModel(width: 512, height: 512, url: "https://homepages.cae.wisc.edu/~ece533/images/airplane.png")
+        let author = Author(name: "Thanh Bui", signature: "@cthanh2307", avatar: "https://homepages.cae.wisc.edu/~ece533/images/baboon.png")
+        newPhoto.author = author
         
-        self.loadPhoto(from: newPhoto, to: self.imvNewPhoto)
+        lblAuthorName.text = newPhoto.author.name
+        lblAuthorSigned.text = newPhoto.author.signature
+        
+        self.loadImage(from: newPhoto.url, to: self.imvNewPhoto)
+        self.loadImage(from: newPhoto.author.avatar, to: self.imvAvatarAuthor)
         self.cstHeightImvNewPhoto.constant = CGFloat(newPhoto.height/newPhoto.width) * imvNewPhoto.bounds.size.width
         self.view.layoutIfNeeded()
         cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + self.topbarHeight + loadMoreViewHeight
     }
+    
     @IBAction func onActionSeeMore(_ sender: Any) {
         currentPage += 1
     }
     
-    private func loadPhoto(from photo: PhotoModel, to imageView: UIImageView) {
-        if let url = URL(string: photo.url) {
+    private func loadImage(from url: String, to imageView: UIImageView) {
+        if let url = URL(string: url) {
             
             let request = Nuke.ImageRequest(url: url)
             
@@ -165,9 +190,9 @@ extension NewPhotoViewController: UICollectionViewDelegate, UICollectionViewData
             return UICollectionViewCell()
         }
         if collectionView == leftClvPhotos {
-            self.loadPhoto(from: leftPhotos[indexPath.item], to: cell.imvPhoto)
+            self.loadImage(from: leftPhotos[indexPath.item].url, to: cell.imvPhoto)
         } else { // Right Clv
-            self.loadPhoto(from: rightPhotos[indexPath.item], to: cell.imvPhoto)
+            self.loadImage(from: rightPhotos[indexPath.item].url, to: cell.imvPhoto)
         }
         return cell
     }

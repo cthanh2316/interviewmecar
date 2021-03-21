@@ -22,6 +22,9 @@ class ProfileTableviewCell: UITableViewCell {
         case .signOut:
             imvIcon.image = UIImage.signOutImage
             lblTitle.text = style.rawValue.localized()
+        case .changeLanguages:
+            imvIcon.image = UIImage.changeLanguagesImage
+            lblTitle.text = style.rawValue.localized()
         }
     }
     
