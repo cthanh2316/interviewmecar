@@ -10,3 +10,9 @@ import Foundation
 enum AppConfig: String {
     case Language = "current_lang"
 }
+
+enum CollectionViewCellName: String {
+    case photoCell = "PhotoCollectionViewCell"
+    
+    static var photo = photoCell.rawValue
+}

@@ -10,9 +10,13 @@
 		008DAB660B81A4068A08F74F /* Pods_InterviewMecar_InterviewMecarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88826DEC67B8A0EA3AC23A /* Pods_InterviewMecar_InterviewMecarUITests.framework */; };
 		3B8CD574FBB6812572811064 /* Pods_InterviewMecarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78A7B553B716E261CCE0C27 /* Pods_InterviewMecarTests.framework */; };
 		791796A4EE6F2A334C52515C /* Pods_InterviewMecar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00573270EA84B2DB1E1CC28 /* Pods_InterviewMecar.framework */; };
+		A43C36E52606E5D700490606 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C36E32606E5D700490606 /* PhotoCollectionViewCell.swift */; };
+		A43C36E62606E5D700490606 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43C36E42606E5D700490606 /* PhotoCollectionViewCell.xib */; };
+		A43C36F22606F84000490606 /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = A43C36F12606F84000490606 /* Photos.json */; };
 		A43FD74126064F710016B9AA /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD74026064F710016B9AA /* TabItem.swift */; };
 		A43FD74C260650E20016B9AA /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD74B260650E20016B9AA /* BaseTabbarController.swift */; };
 		A43FD751260651120016B9AA /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD750260651120016B9AA /* CustomTabbar.swift */; };
+		A43FD7742606D39B0016B9AA /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD7732606D39B0016B9AA /* PhotoModel.swift */; };
 		A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC72604545500C60F2A /* AppDelegate.swift */; };
 		A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC92604545500C60F2A /* SceneDelegate.swift */; };
 		A471BDD12604545500C60F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471BDD02604545500C60F2A /* Assets.xcassets */; };
@@ -53,8 +57,8 @@
 		A471BEA92604694E00C60F2A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEA72604694E00C60F2A /* HomeViewController.xib */; };
 		A471BEAF2604695900C60F2A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEAD2604695900C60F2A /* SearchViewController.swift */; };
 		A471BEB02604695900C60F2A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEAE2604695900C60F2A /* SearchViewController.xib */; };
-		A471BEB62604696300C60F2A /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEB42604696300C60F2A /* AddPhotoViewController.swift */; };
-		A471BEB72604696300C60F2A /* AddPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEB52604696300C60F2A /* AddPhotoViewController.xib */; };
+		A471BEB62604696300C60F2A /* NewPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEB42604696300C60F2A /* NewPhotoViewController.swift */; };
+		A471BEB72604696300C60F2A /* NewPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEB52604696300C60F2A /* NewPhotoViewController.xib */; };
 		A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEBB2604696F00C60F2A /* MessageViewController.swift */; };
 		A471BEBE2604696F00C60F2A /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A471BEBC2604696F00C60F2A /* MessageViewController.xib */; };
 		A471BEC42604697D00C60F2A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BEC22604697D00C60F2A /* ProfileViewController.swift */; };
@@ -93,9 +97,13 @@
 		1598463C317D968D15DB32D3 /* Pods-InterviewMecarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecarTests.release.xcconfig"; path = "Target Support Files/Pods-InterviewMecarTests/Pods-InterviewMecarTests.release.xcconfig"; sourceTree = "<group>"; };
 		63B7A5B1F599F6C0D7C51408 /* Pods-InterviewMecar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecar.release.xcconfig"; path = "Target Support Files/Pods-InterviewMecar/Pods-InterviewMecar.release.xcconfig"; sourceTree = "<group>"; };
 		765A961F43AF46D3D4C93CFF /* Pods-InterviewMecarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewMecarTests.debug.xcconfig"; path = "Target Support Files/Pods-InterviewMecarTests/Pods-InterviewMecarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43C36E32606E5D700490606 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A43C36E42606E5D700490606 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		A43C36F12606F84000490606 /* Photos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Photos.json; sourceTree = "<group>"; };
 		A43FD74026064F710016B9AA /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		A43FD74B260650E20016B9AA /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		A43FD750260651120016B9AA /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
+		A43FD7732606D39B0016B9AA /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		A471BDC42604545500C60F2A /* InterviewMecar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMecar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDC72604545500C60F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471BDC92604545500C60F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,8 +150,8 @@
 		A471BEA72604694E00C60F2A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A471BEAD2604695900C60F2A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A471BEAE2604695900C60F2A /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		A471BEB42604696300C60F2A /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
-		A471BEB52604696300C60F2A /* AddPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotoViewController.xib; sourceTree = "<group>"; };
+		A471BEB42604696300C60F2A /* NewPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPhotoViewController.swift; sourceTree = "<group>"; };
+		A471BEB52604696300C60F2A /* NewPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPhotoViewController.xib; sourceTree = "<group>"; };
 		A471BEBB2604696F00C60F2A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		A471BEBC2604696F00C60F2A /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		A471BEC22604697D00C60F2A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +228,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A43C36F02606F80E00490606 /* DataTest */ = {
+			isa = PBXGroup;
+			children = (
+				A43C36F12606F84000490606 /* Photos.json */,
+			);
+			path = DataTest;
+			sourceTree = "<group>";
+		};
 		A43FD73E26064F5B0016B9AA /* Customize */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +252,31 @@
 				A43FD750260651120016B9AA /* CustomTabbar.swift */,
 			);
 			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		A43FD7552606CB060016B9AA /* PhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A43C36E32606E5D700490606 /* PhotoCollectionViewCell.swift */,
+				A43C36E42606E5D700490606 /* PhotoCollectionViewCell.xib */,
+			);
+			path = PhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A43FD7712606D3790016B9AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A43FD7722606D3840016B9AA /* PhotoModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A43FD7722606D3840016B9AA /* PhotoModel */ = {
+			isa = PBXGroup;
+			children = (
+				A43FD7732606D39B0016B9AA /* PhotoModel.swift */,
+			);
+			path = PhotoModel;
 			sourceTree = "<group>";
 		};
 		A471BDBB2604545500C60F2A = {
@@ -266,6 +307,7 @@
 				A471BE00260455FF00C60F2A /* AppDelegate */,
 				A471BE012604560800C60F2A /* Resources */,
 				A471BE4526045B8700C60F2A /* Common */,
+				A43FD7712606D3790016B9AA /* Models */,
 				A471BE192604563600C60F2A /* ApplicationFlow */,
 			);
 			path = InterviewMecar;
@@ -301,6 +343,7 @@
 		A471BE012604560800C60F2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A43C36F02606F80E00490606 /* DataTest */,
 				A471BE6626045E5800C60F2A /* Font */,
 				A471BDD02604545500C60F2A /* Assets.xcassets */,
 				A471BDD52604545500C60F2A /* Info.plist */,
@@ -318,7 +361,7 @@
 				A471BE5C26045DB900C60F2A /* LoginScreen */,
 				A471BE3D26045B0200C60F2A /* HomeScreen */,
 				A471BE3E26045B0A00C60F2A /* SearchScreen */,
-				A471BE3F26045B2700C60F2A /* AddPhotoScreen */,
+				A471BE3F26045B2700C60F2A /* NewPhotoScreen */,
 				A471BE4026045B3200C60F2A /* MessageScreen */,
 				A471BE4126045B4700C60F2A /* ProfileScreen */,
 			);
@@ -351,13 +394,14 @@
 			path = SearchScreen;
 			sourceTree = "<group>";
 		};
-		A471BE3F26045B2700C60F2A /* AddPhotoScreen */ = {
+		A471BE3F26045B2700C60F2A /* NewPhotoScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A471BEB42604696300C60F2A /* AddPhotoViewController.swift */,
-				A471BEB52604696300C60F2A /* AddPhotoViewController.xib */,
+				A43FD7552606CB060016B9AA /* PhotoCollectionViewCell */,
+				A471BEB42604696300C60F2A /* NewPhotoViewController.swift */,
+				A471BEB52604696300C60F2A /* NewPhotoViewController.xib */,
 			);
-			path = AddPhotoScreen;
+			path = NewPhotoScreen;
 			sourceTree = "<group>";
 		};
 		A471BE4026045B3200C60F2A /* MessageScreen */ = {
@@ -603,6 +647,7 @@
 				A471BF202604993100C60F2A /* Comfortaa-Bold.ttf in Resources */,
 				A471BF1E2604993100C60F2A /* Comfortaa-Light.ttf in Resources */,
 				A471BE9B2604693600C60F2A /* SignUpViewController.xib in Resources */,
+				A43C36F22606F84000490606 /* Photos.json in Resources */,
 				A471BE7F26045E7800C60F2A /* Roboto-LightItalic.ttf in Resources */,
 				A471BDD42604545500C60F2A /* LaunchScreen.storyboard in Resources */,
 				A471BEA22604694100C60F2A /* LoginViewController.xib in Resources */,
@@ -626,7 +671,8 @@
 				A471BF0026048AF000C60F2A /* Localizable.strings in Resources */,
 				A471BE8626045E7800C60F2A /* Roboto-MediumItalic.ttf in Resources */,
 				A471BE7A26045E7800C60F2A /* Roboto-Black.ttf in Resources */,
-				A471BEB72604696300C60F2A /* AddPhotoViewController.xib in Resources */,
+				A43C36E62606E5D700490606 /* PhotoCollectionViewCell.xib in Resources */,
+				A471BEB72604696300C60F2A /* NewPhotoViewController.xib in Resources */,
 				A471BEC52604697D00C60F2A /* ProfileViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,10 +801,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43FD7742606D39B0016B9AA /* PhotoModel.swift in Sources */,
 				A471BECF26047F4100C60F2A /* UILabel+Extension.swift in Sources */,
 				A471BF0B26048D4D00C60F2A /* AppConfigure.swift in Sources */,
 				A43FD74126064F710016B9AA /* TabItem.swift in Sources */,
-				A471BEB62604696300C60F2A /* AddPhotoViewController.swift in Sources */,
+				A471BEB62604696300C60F2A /* NewPhotoViewController.swift in Sources */,
 				A471BE8F26045FAB00C60F2A /* UIFont+Extension.swift in Sources */,
 				A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */,
 				A43FD751260651120016B9AA /* CustomTabbar.swift in Sources */,
@@ -768,6 +815,7 @@
 				A471BE94260468F400C60F2A /* UIView+Extension.swift in Sources */,
 				A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */,
 				A471BE4D26045BD600C60F2A /* Enums.swift in Sources */,
+				A43C36E52606E5D700490606 /* PhotoCollectionViewCell.swift in Sources */,
 				A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */,
 				A471BE5F26045DF700C60F2A /* UIColor+Extension.swift in Sources */,
 				A471BF252604AC6600C60F2A /* UIViewController+Extension.swift in Sources */,

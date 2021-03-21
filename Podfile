@@ -8,6 +8,8 @@ target 'InterviewMecar' do
   # Pods for InterviewMecar
   pod 'IQKeyboardManager'
   pod 'Firebase/Auth'
+  pod 'Nuke'
+  pod 'SwiftyJSON'
   target 'InterviewMecarTests' do
     inherit! :search_paths
     # Pods for testing

@@ -33,6 +33,14 @@ extension UIColor {
         return UIColor.black
     }
     
+    static var darkBtnTextColor: UIColor {
+        return UIColor.white
+    }
+    
+    static var lightBtnTextColor: UIColor {
+        return UIColor.black
+    }
+    
     static var loginBgColor: UIColor {
         return UIColor.white
     }
@@ -59,6 +67,14 @@ extension UIColor {
     
     static var tabbarUnselectedTintColor: UIColor {
         return UIColor.black
+    }
+    
+    static var lblNameColor: UIColor {
+        return UIColor.black
+    }
+    
+    static var lblSubnameColor: UIColor {
+        return UIColor(white: 0.0, alpha: 0.8)
     }
     
 }

@@ -25,9 +25,9 @@ enum TabItem: String, CaseIterable {
             let searchNC = UINavigationController(rootViewController: searchVC)
             return searchNC
         case .new:
-            let addPhotoVC = AddPhotoViewController(nibName: "AddPhotoViewController", bundle: nil)
-            let addPhotoNC = UINavigationController(rootViewController: addPhotoVC)
-            return addPhotoNC
+            let newPhotoVC = NewPhotoViewController(nibName: "NewPhotoViewController", bundle: nil)
+            let newPhotoNC = UINavigationController(rootViewController: newPhotoVC)
+            return newPhotoNC
         case .messages:
             let messageVC = MessageViewController(nibName: "MessageViewController", bundle: nil)
             let messageNC = UINavigationController(rootViewController: messageVC)

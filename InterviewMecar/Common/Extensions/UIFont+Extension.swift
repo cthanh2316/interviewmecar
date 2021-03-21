@@ -62,4 +62,8 @@ extension UIFont {
     static var textFieldFont: UIFont {
         return UIFont(styleRoboto: .Regular, ofSize: 15.0)
     }
+    
+    static var sectionTitleFont: UIFont {
+        return UIFont(styleRoboto: .Black, ofSize: 13.0)
+    }
 }

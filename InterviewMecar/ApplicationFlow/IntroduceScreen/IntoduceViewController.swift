@@ -29,8 +29,10 @@ class IntoduceViewController: UIViewController {
         imvAuthorAvatar.image = UIImage.authorAvatar
         imvAuthorAvatar.circular()
         
-        lblAuthorName.font = UIFont.lblName
-        lblAuthorSigned.font = UIFont.lblSubName
+        lblAuthorName.font = .lblName
+        lblAuthorName.textColor = .lblNameColor
+        lblAuthorSigned.font = .lblSubName
+        lblAuthorSigned.textColor = .lblSubnameColor
         
         btnLogin.cornerRadius = .btnRadius
         btnLogin.borderWidth = .borderWidth

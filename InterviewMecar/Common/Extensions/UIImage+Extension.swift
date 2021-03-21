@@ -44,6 +44,10 @@ extension UIImage {
     static var tabSelectedBackground: UIImage {
         return UIImage(named: "Tabbar_Background")!
     }
+    
+    static var placeholderImage: UIImage {
+        return UIImage(named: "placeholder-image")!
+    }
 
 }
 
