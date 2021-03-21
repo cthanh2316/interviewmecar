@@ -18,9 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         FirebaseApp.configure()
         
         let window = UIWindow.init(windowScene: scene)
+        self.window = window
         window.overrideUserInterfaceStyle = .light
         window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
-        self.window = window
         window.makeKeyAndVisible()
     }
     

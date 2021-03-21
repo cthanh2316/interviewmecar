@@ -20,6 +20,7 @@
 		A462BE2F260729C6007701CC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462BE2E260729C6007701CC /* FirebaseManager.swift */; };
 		A462BE52260740DD007701CC /* ProfileTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462BE50260740DD007701CC /* ProfileTableviewCell.swift */; };
 		A462BE53260740DD007701CC /* ProfileTableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A462BE51260740DD007701CC /* ProfileTableviewCell.xib */; };
+		A462BE5B26075A93007701CC /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462BE5A26075A93007701CC /* UIDevice+Extension.swift */; };
 		A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC72604545500C60F2A /* AppDelegate.swift */; };
 		A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC92604545500C60F2A /* SceneDelegate.swift */; };
 		A471BDD12604545500C60F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471BDD02604545500C60F2A /* Assets.xcassets */; };
@@ -110,6 +111,7 @@
 		A462BE2E260729C6007701CC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A462BE50260740DD007701CC /* ProfileTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableviewCell.swift; sourceTree = "<group>"; };
 		A462BE51260740DD007701CC /* ProfileTableviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableviewCell.xib; sourceTree = "<group>"; };
+		A462BE5A26075A93007701CC /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		A471BDC42604545500C60F2A /* InterviewMecar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMecar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDC72604545500C60F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471BDC92604545500C60F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 				A471BF0F2604979B00C60F2A /* UITextField+Extension.swift */,
 				A471BF14260497FA00C60F2A /* CGFloat+Extension.swift */,
 				A471BF242604AC6600C60F2A /* UIViewController+Extension.swift */,
+				A462BE5A26075A93007701CC /* UIDevice+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -848,6 +851,7 @@
 				A43FD74C260650E20016B9AA /* BaseTabbarController.swift in Sources */,
 				A471BE94260468F400C60F2A /* UIView+Extension.swift in Sources */,
 				A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */,
+				A462BE5B26075A93007701CC /* UIDevice+Extension.swift in Sources */,
 				A471BE4D26045BD600C60F2A /* Enums.swift in Sources */,
 				A43C36E52606E5D700490606 /* PhotoCollectionViewCell.swift in Sources */,
 				A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */,
@@ -1052,7 +1056,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thanhbui.InterviewMecar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thanhbui.interviewmecar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1073,7 +1077,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thanhbui.InterviewMecar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thanhbui.interviewmecar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

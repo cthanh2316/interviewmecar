@@ -33,7 +33,7 @@ class NewPhotoViewController: UIViewController {
     
     var rightPhotos: [PhotoModel] = []
     
-    let cellWidth = (ScreenSize.WIDTH - 32 - 9)/2 // 32: Leading - Trailing, 9: spacing, 2: 2 line vertical
+    let cellWidth: CGFloat = (ScreenSize.WIDTH - 32 - 9)/2 // 32: Leading - Trailing, 9: spacing, 2: 2 line vertical
     
     let lineSpacing: CGFloat = 9.0
     
@@ -61,6 +61,12 @@ class NewPhotoViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        leftClvPhotos.reloadData()
+        rightClvPhotos.reloadData()
+    }
+    
     private func createTempData(page: Int = 0) {
         let dict = Utils.parseJsonFromFile(filename: "Photos")
         for (_, photoData): (String, JSON) in dict["data"] {
@@ -76,7 +82,7 @@ class NewPhotoViewController: UIViewController {
         }
         let leftClvContentSize = calculateContentSizeHeight(collectionView: leftClvPhotos, photos: leftPhotos)
         let rightClvContentSize = calculateContentSizeHeight(collectionView: rightClvPhotos, photos: rightPhotos)
-        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + self.topbarHeight + loadMoreViewHeight + max(leftClvContentSize, rightClvContentSize)
+        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + loadMoreViewHeight + max(leftClvContentSize, rightClvContentSize)
         self.view.layoutIfNeeded()
         leftClvPhotos.reloadData()
         rightClvPhotos.reloadData()
@@ -153,7 +159,7 @@ class NewPhotoViewController: UIViewController {
         self.loadImage(from: newPhoto.author.avatar, to: self.imvAvatarAuthor)
         self.cstHeightImvNewPhoto.constant = CGFloat(newPhoto.height/newPhoto.width) * imvNewPhoto.bounds.size.width
         self.view.layoutIfNeeded()
-        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + self.topbarHeight + loadMoreViewHeight
+        cstHeightForContentView.constant = vwBrowseAll.frame.origin.y + CGFloat.tabbarHeight + loadMoreViewHeight
     }
     
     @IBAction func onActionSeeMore(_ sender: Any) {
@@ -198,12 +204,24 @@ extension NewPhotoViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let leftClvContentSize = calculateContentSizeHeight(collectionView: leftClvPhotos, photos: leftPhotos)
+        let rightClvContentSize = calculateContentSizeHeight(collectionView: rightClvPhotos, photos: rightPhotos)
+        if leftClvContentSize < rightClvContentSize {
+            if collectionView == leftClvPhotos && indexPath.row == leftPhotos.count - 1 {
+                return CGSize(width: min(cellWidth, collectionView.bounds.size.width), height: min(cellWidth, collectionView.bounds.size.width) * CGFloat(leftPhotos.last!.height)/CGFloat(leftPhotos.last!.width) + (rightClvContentSize - leftClvContentSize))
+            }
+        } else {
+            if collectionView == rightClvPhotos && indexPath.row == rightPhotos.count - 1 {
+                return CGSize(width: min(cellWidth, collectionView.bounds.size.width), height: min(cellWidth, collectionView.bounds.size.width) * CGFloat(rightPhotos.last!.height)/CGFloat(rightPhotos.last!.width) + (leftClvContentSize - rightClvContentSize))
+            }
+        }
         if collectionView == leftClvPhotos {
             let photo = leftPhotos[indexPath.item]
-            return CGSize(width: cellWidth, height: cellWidth * CGFloat(photo.height)/CGFloat(photo.width))
+            return CGSize(width: min(cellWidth, collectionView.bounds.size.width), height: min(cellWidth, collectionView.bounds.size.width) * CGFloat(photo.height)/CGFloat(photo.width))
         } else { // Right clv
             let photo = rightPhotos[indexPath.item]
-            return CGSize(width: cellWidth, height: cellWidth * CGFloat(photo.height)/CGFloat(photo.width))
+            return CGSize(width: min(cellWidth, collectionView.bounds.size.width), height: min(cellWidth, collectionView.bounds.size.width) * CGFloat(photo.height)/CGFloat(photo.width))
         }
     }
     

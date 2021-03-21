@@ -8,7 +8,7 @@
 import UIKit
 
 extension CGFloat {
-    static var tabbarHeight: CGFloat = 83.0
+    static var tabbarHeight: CGFloat = UIDevice.hasNotch ? 83.0 : 58.0
     static var kernBtnValue: CGFloat = 0.52
     static var kernTitleValue: CGFloat = -0.54
     static var kernSectionTitleValue: Double = 0.52

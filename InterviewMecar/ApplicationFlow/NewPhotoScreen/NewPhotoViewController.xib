@@ -35,7 +35,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c87-AO-kbw">
-                    <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QK-hp-ID1">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -114,7 +114,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="1D2-xy-gZv">
                                             <rect key="frame" x="16" y="56" width="382" height="468"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-Eo-efW">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-Eo-efW">
                                                     <rect key="frame" x="0.0" y="0.0" width="186.5" height="468"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XQd-uh-YaQ">
@@ -124,7 +124,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                 </collectionView>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="75X-VA-9nS">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="75X-VA-9nS">
                                                     <rect key="frame" x="195.5" y="0.0" width="186.5" height="468"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pel-es-tFj">
@@ -137,6 +137,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="75X-VA-9nS" firstAttribute="width" secondItem="Rxy-Eo-efW" secondAttribute="width" id="FbU-oC-Ud4"/>
+                                                <constraint firstItem="75X-VA-9nS" firstAttribute="leading" secondItem="Rxy-Eo-efW" secondAttribute="trailing" constant="9" id="n60-KR-nE8"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -196,7 +197,6 @@
                         <constraint firstItem="1QK-hp-ID1" firstAttribute="top" secondItem="c87-AO-kbw" secondAttribute="top" id="DHw-gL-pSC"/>
                         <constraint firstAttribute="trailing" secondItem="1QK-hp-ID1" secondAttribute="trailing" id="GjL-zO-kCS"/>
                         <constraint firstAttribute="bottom" secondItem="1QK-hp-ID1" secondAttribute="bottom" id="M8p-hZ-N5S"/>
-                        <constraint firstItem="1QK-hp-ID1" firstAttribute="top" secondItem="Wh8-8s-Jl8" secondAttribute="top" id="z5Z-l1-TlH"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="kNE-YU-ITO"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="Wh8-8s-Jl8"/>
@@ -205,8 +205,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="c87-AO-kbw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3pt-wt-Iwa"/>
                 <constraint firstAttribute="bottom" secondItem="c87-AO-kbw" secondAttribute="bottom" constant="83" id="Aqw-mT-z9S"/>
-                <constraint firstItem="c87-AO-kbw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="M2C-jH-gKC"/>
                 <constraint firstItem="c87-AO-kbw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZLX-xe-1Ea"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c87-AO-kbw" secondAttribute="trailing" id="ydQ-2I-qKt"/>
             </constraints>
