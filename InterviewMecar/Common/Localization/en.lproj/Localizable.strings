@@ -16,5 +16,9 @@
 "Cancel" = "Cancel";
 "Password" = "Password";
 "Invalid email or password." = "Invalid email or password.";
+"Invalid email." = "Invalid email.";
 "Discover" = "Discover";
 "See more" = "See more";
+"Sign up success" = "Sign up success";
+"What's new today" = "What's new today";
+"Browse all" = "Browse all";

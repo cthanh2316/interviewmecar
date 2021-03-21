@@ -12,9 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="InterviewMecar" customModuleProvider="target">
             <connections>
                 <outlet property="btnSignUp" destination="wsL-jb-hNq" id="24R-sa-H3w"/>
+                <outlet property="cstTopTxtPassword" destination="EFS-2O-nde" id="rak-KF-gPA"/>
                 <outlet property="lblTitle" destination="27m-KA-99O" id="MM9-1n-Nmm"/>
                 <outlet property="tvLegal" destination="xv1-sc-cMM" id="tgt-Bi-MPp"/>
                 <outlet property="txtEmail" destination="NKp-OL-BQc" id="LY6-Hm-TuO"/>
+                <outlet property="txtPassword" destination="fOv-IM-YvB" id="Acw-TO-Vh0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,8 +45,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOv-IM-YvB">
+                    <rect key="frame" x="16" y="179" width="382" height="52"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Zgz-92-lBG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="txtEmailEditingChanged:" destination="-1" eventType="editingChanged" id="K1V-Rp-6Hj"/>
+                    </connections>
+                </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="yourname@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKp-OL-BQc">
                     <rect key="frame" x="16" y="179" width="382" height="52"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="wZq-m5-6I3"/>
                     </constraints>
@@ -87,14 +102,17 @@
                 <constraint firstItem="27m-KA-99O" firstAttribute="top" secondItem="OD0-mU-fWW" secondAttribute="bottom" constant="16" id="37l-ea-xiw"/>
                 <constraint firstItem="NKp-OL-BQc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6SF-0s-smG"/>
                 <constraint firstItem="xv1-sc-cMM" firstAttribute="top" secondItem="wsL-jb-hNq" secondAttribute="bottom" constant="32" id="6i0-jU-hZR"/>
+                <constraint firstItem="fOv-IM-YvB" firstAttribute="top" secondItem="NKp-OL-BQc" secondAttribute="bottom" constant="-52" id="EFS-2O-nde"/>
+                <constraint firstItem="fOv-IM-YvB" firstAttribute="trailing" secondItem="NKp-OL-BQc" secondAttribute="trailing" id="G7n-yG-26g"/>
                 <constraint firstItem="wsL-jb-hNq" firstAttribute="height" secondItem="NKp-OL-BQc" secondAttribute="height" id="RV5-Bp-hsl"/>
                 <constraint firstItem="wsL-jb-hNq" firstAttribute="trailing" secondItem="NKp-OL-BQc" secondAttribute="trailing" id="aIj-7v-9Ug"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NKp-OL-BQc" secondAttribute="trailing" constant="16" id="kaK-85-Z7P"/>
                 <constraint firstItem="27m-KA-99O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oKS-jk-ptd"/>
+                <constraint firstItem="wsL-jb-hNq" firstAttribute="top" secondItem="fOv-IM-YvB" secondAttribute="bottom" constant="16" id="ong-97-buj"/>
                 <constraint firstItem="wsL-jb-hNq" firstAttribute="leading" secondItem="NKp-OL-BQc" secondAttribute="leading" id="qYN-DB-7ig"/>
                 <constraint firstItem="xv1-sc-cMM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="tlo-ZD-E2k"/>
+                <constraint firstItem="fOv-IM-YvB" firstAttribute="leading" secondItem="NKp-OL-BQc" secondAttribute="leading" id="vhK-dj-Kxz"/>
                 <constraint firstItem="OD0-mU-fWW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wYv-3x-hDA"/>
-                <constraint firstItem="wsL-jb-hNq" firstAttribute="top" secondItem="NKp-OL-BQc" secondAttribute="bottom" constant="16" id="xOj-99-CJs"/>
                 <constraint firstItem="OD0-mU-fWW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xzc-r0-5hc"/>
                 <constraint firstItem="NKp-OL-BQc" firstAttribute="top" secondItem="27m-KA-99O" secondAttribute="bottom" constant="32" id="ytZ-tl-U1R"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xv1-sc-cMM" secondAttribute="trailing" constant="16" id="zo4-7O-qCV"/>

@@ -16,5 +16,9 @@
 "Cancel" = "Đóng";
 "Password" = "Mật khẩu";
 "Invalid email or password." = "Địa chỉ email hoặc mật khẩu không đúng.";
+"Invalid email." = "Địa chỉ email không đúng định dạng.";
 "Discover" = "Khám phá";
 "See more" = "Xem thêm";
+"Sign up success" = "Đăng ký thành công";
+"What's new today" = "Hôm nay có gì mới";
+"Browse all" = "Tất cả";

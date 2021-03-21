@@ -59,7 +59,7 @@ class CustomTabBar: UIView {
 
         setNeedsLayout()
         layoutIfNeeded()
-        activateTab(tab: 0)
+        activateTab(tab: 2)
     }
 
     func createTabItem(item: TabItem) -> UIView {

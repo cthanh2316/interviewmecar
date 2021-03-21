@@ -17,6 +17,7 @@
 		A43FD74C260650E20016B9AA /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD74B260650E20016B9AA /* BaseTabbarController.swift */; };
 		A43FD751260651120016B9AA /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD750260651120016B9AA /* CustomTabbar.swift */; };
 		A43FD7742606D39B0016B9AA /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43FD7732606D39B0016B9AA /* PhotoModel.swift */; };
+		A462BE2F260729C6007701CC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462BE2E260729C6007701CC /* FirebaseManager.swift */; };
 		A471BDC82604545500C60F2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC72604545500C60F2A /* AppDelegate.swift */; };
 		A471BDCA2604545500C60F2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A471BDC92604545500C60F2A /* SceneDelegate.swift */; };
 		A471BDD12604545500C60F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A471BDD02604545500C60F2A /* Assets.xcassets */; };
@@ -104,6 +105,7 @@
 		A43FD74B260650E20016B9AA /* BaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		A43FD750260651120016B9AA /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		A43FD7732606D39B0016B9AA /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		A462BE2E260729C6007701CC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A471BDC42604545500C60F2A /* InterviewMecar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewMecar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A471BDC72604545500C60F2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A471BDC92604545500C60F2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -279,6 +281,22 @@
 			path = PhotoModel;
 			sourceTree = "<group>";
 		};
+		A462BE2C2607298F007701CC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A462BE2D260729B9007701CC /* FirebaseManager */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A462BE2D260729B9007701CC /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				A462BE2E260729C6007701CC /* FirebaseManager.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
 		A471BDBB2604545500C60F2A = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +443,7 @@
 		A471BE4526045B8700C60F2A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A462BE2C2607298F007701CC /* Repository */,
 				A43FD73E26064F5B0016B9AA /* Customize */,
 				A471BED7260482D400C60F2A /* Localization */,
 				A471BE4626045BA600C60F2A /* Extensions */,
@@ -817,6 +836,7 @@
 				A471BE4D26045BD600C60F2A /* Enums.swift in Sources */,
 				A43C36E52606E5D700490606 /* PhotoCollectionViewCell.swift in Sources */,
 				A471BEBD2604696F00C60F2A /* MessageViewController.swift in Sources */,
+				A462BE2F260729C6007701CC /* FirebaseManager.swift in Sources */,
 				A471BE5F26045DF700C60F2A /* UIColor+Extension.swift in Sources */,
 				A471BF252604AC6600C60F2A /* UIViewController+Extension.swift in Sources */,
 				A471BEAF2604695900C60F2A /* SearchViewController.swift in Sources */,

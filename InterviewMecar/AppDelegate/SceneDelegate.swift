@@ -19,12 +19,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow.init(windowScene: scene)
         window.overrideUserInterfaceStyle = .light
-        // TODO: Check state login to set rootview
-//        window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
-        window.rootViewController = BaseTabBarController()
+        window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
         self.window = window
-        AppConfigure.currentLang = "en"
+        AppConfigure.currentLang = "vi"
         window.makeKeyAndVisible()
+    }
+    
+    func gotoTabbarController() {
+        window?.rootViewController = BaseTabBarController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

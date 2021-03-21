@@ -21,9 +21,12 @@ extension UIViewController {
             (self.navigationController?.navigationBar.frame.height ?? 0.0)
     }
     
-    func showAlert(title: String, message: String) {
+    func showAlert(title: String, message: String, actionTitle: String = "Cancel".localized(), actionHandling: (() -> Void)? = nil) {
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel".localized(), style: .default) { (_) in
+        let cancelAction = UIAlertAction(title: actionTitle, style: .default) { (_) in
+            if let actionHandle = actionHandling {
+                actionHandle()
+            }
             alertVC.dismiss(animated: true)
         }
         alertVC.addAction(cancelAction)

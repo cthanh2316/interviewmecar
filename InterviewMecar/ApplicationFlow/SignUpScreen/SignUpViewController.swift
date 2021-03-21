@@ -6,13 +6,22 @@
 //
 
 import UIKit
+import Firebase
+
+protocol SignUpViewControllerDelegate {
+    func resgisterSuccess(email: String, password: String)
+}
 
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var cstTopTxtPassword: NSLayoutConstraint!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var tvLegal: UITextView!
+    
+    var delegate: SignUpViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +41,14 @@ class SignUpViewController: UIViewController {
         txtEmail.font = UIFont.textFieldFont
         txtEmail.placeholder = "yourname@email.com".localized()
         txtEmail.delegate = self
+        
+        txtPassword.borderWidth = .borderWidth
+        txtPassword.borderColor = .borderColor
+        txtPassword.setLeftPaddingPoints(.leftRightPadding)
+        txtPassword.setRightPaddingPoints(.leftRightPadding)
+        txtPassword.font = UIFont.textFieldFont
+        txtPassword.placeholder = "Password".localized()
+        txtPassword.delegate = self
         
         btnSignUp.setTitle("Sign up".localized().uppercased(), for: .normal)
         btnSignUp.titleLabel?.font = UIFont.btnTitleFont
@@ -69,6 +86,39 @@ class SignUpViewController: UIViewController {
     @IBAction func txtEmailEditingChanged(_ sender: Any) {
         if let email = txtEmail.text {
             btnSignUp.isEnabled = email.isValidEmail
+            if email.isValidEmail {
+                UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut]) {
+                    self.cstTopTxtPassword.constant = 16
+                    self.view.layoutIfNeeded()
+                } completion: { (_) in
+                    
+                }
+            } else {
+                UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseIn]) {
+                    self.cstTopTxtPassword.constant = -self.txtPassword.bounds.size.height
+                    self.view.layoutIfNeeded()
+                } completion: { (_) in
+                    self.txtPassword.text = ""
+                }
+            }
+        }
+    }
+    
+    private func signUp(email: String, password: String) {
+        FirebaseManager.auth.createUser(email:email , password: password) { [weak self] (success, user, error) in
+            guard let strongSelf = self else {
+                return
+            }
+            if success {
+                self?.showAlert(title: "", message: "Sign up success".localized(), actionTitle: "Log in".localized().uppercased(), actionHandling: {
+                    strongSelf.dismiss(animated: false) {
+                        strongSelf.delegate?.resgisterSuccess(email: email, password: password)
+                    }
+                })
+                
+            } else {
+                strongSelf.showAlert(title: "", message: error?.localizedDescription ?? "")
+            }
         }
     }
     
@@ -77,16 +127,31 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onActionSignUp(_ sender: Any) {
-        // TODO: Register account
+        if let email = txtEmail.text, email.isValidEmail, let password = txtPassword.text {
+            self.signUp(email: email, password: password)
+
+        } else {
+            self.showAlert(title: "", message: "Invalid email or password.".localized())
+        }
     }
 }
 
 extension SignUpViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let email = textField.text {
-            return email.isValidEmail
+        if textField == self.txtEmail {
+            txtPassword.becomeFirstResponder()
+            return true
+        } else if textField == self.txtPassword {
+            if let email = txtEmail.text, email.isValidEmail, let password = textField.text, !password.isEmpty {
+                self.signUp(email: email, password: password)
+                textField.resignFirstResponder()
+                return true
+            } else {
+                showAlert(title: "", message: "Invalid email or password.".localized())
+                return false
+            }
         }
-        return true
+        return false
     }
 }
 

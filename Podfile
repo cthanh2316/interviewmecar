@@ -7,7 +7,9 @@ target 'InterviewMecar' do
 
   # Pods for InterviewMecar
   pod 'IQKeyboardManager'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   pod 'Nuke'
   pod 'SwiftyJSON'
   target 'InterviewMecarTests' do

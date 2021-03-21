@@ -23,7 +23,7 @@ class BaseTabBarController: UITabBarController {
             self.viewControllers = viewControllers
         })
 
-        selectedIndex = 0 // Set default selected index thành item đầu tiên
+        selectedIndex = 2 // Set default selected index thành item đầu tiên
     }
 
     func setupCustomTabMenu(_ menuItems: [TabItem], completion: @escaping ([UIViewController]) -> Void) {

@@ -53,15 +53,39 @@ class IntoduceViewController: UIViewController {
 
     }
     
-    @IBAction func onActionLogin(_ sender: Any) {
+    private func gotoLoginScreen(email: String = "", password: String = "") {
         let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        loginVC.userName = email
+        loginVC.password = password
+        loginVC.delegate = self
         loginVC.modalPresentationStyle = .overFullScreen
         self.present(loginVC, animated: true)
     }
     
+    @IBAction func onActionLogin(_ sender: Any) {
+        gotoLoginScreen()
+    }
+    
     @IBAction func onActionRegister(_ sender: Any) {
         let signupVC = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        signupVC.delegate = self
         signupVC.modalPresentationStyle = .overFullScreen
         self.present(signupVC, animated: true)
+    }
+}
+
+extension IntoduceViewController: SignUpViewControllerDelegate {
+    func resgisterSuccess(email: String, password: String) {
+        print("Register success")
+        gotoLoginScreen(email: email, password: password)
+    }
+}
+
+extension IntoduceViewController: LoginViewControllerDelegate {
+    func loginSuccess() {
+        print("Login success")
+        if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+            sceneDelegate.gotoTabbarController()
+        }
     }
 }
