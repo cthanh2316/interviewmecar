@@ -20,48 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow.init(windowScene: scene)
         window.overrideUserInterfaceStyle = .light
         // TODO: Check state login to set rootview
-        window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
+//        window.rootViewController = IntoduceViewController(nibName: "IntoduceViewController", bundle: nil)
+        window.rootViewController = BaseTabBarController()
         self.window = window
-        AppConfigure.currentLang = "vi"
+        AppConfigure.currentLang = "en"
         window.makeKeyAndVisible()
-    }
-    
-    private func createTabbarController() -> UITabBarController{
-        let tabbar = UITabBarController()
-        tabbar.viewControllers = [createHomeNC(), createSearchNC(), createAddPhotoNC(), createMessageNC(), createProfileNC()]
-        UITabBar.appearance().tintColor = .black
-
-        return tabbar
-    }
-    
-    private func createHomeNC() -> UINavigationController {
-        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let homeNC = UINavigationController(rootViewController: homeVC)
-        return homeNC
-    }
-    
-    private func createSearchNC() -> UINavigationController {
-        let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
-        let searchNC = UINavigationController(rootViewController: searchVC)
-        return searchNC
-    }
-    
-    private func createAddPhotoNC() -> UINavigationController {
-        let addPhotoVC = AddPhotoViewController(nibName: "AddPhotoViewController", bundle: nil)
-        let addPhotoNC = UINavigationController(rootViewController: addPhotoVC)
-        return addPhotoNC
-    }
-    
-    private func createMessageNC() -> UINavigationController {
-        let messageVC = MessageViewController(nibName: "MessageViewController", bundle: nil)
-        let messageNC = UINavigationController(rootViewController: messageVC)
-        return messageNC
-    }
-    
-    private func createProfileNC() -> UINavigationController {
-        let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
-        let profileNC = UINavigationController(rootViewController: profileVC)
-        return profileNC
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

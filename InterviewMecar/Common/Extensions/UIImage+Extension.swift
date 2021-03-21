@@ -20,6 +20,31 @@ extension UIImage {
     static var authorAvatar: UIImage {
         return UIImage(named: "AuthorAvatar")!
     }
+    
+    static var tabHome: UIImage {
+        return UIImage(named: "Icon_Home")!
+    }
+    
+    static var tabSearch: UIImage {
+        return UIImage(named: "Icon_Search")!
+    }
+    
+    static var tabNew: UIImage {
+        return UIImage(named: "Icon_New")!
+    }
+    
+    static var tabMessage: UIImage {
+        return UIImage(named: "Icon_Message")!
+    }
+    
+    static var tabProfile: UIImage {
+        return UIImage(named: "Icon_Profile")!
+    }
+    
+    static var tabSelectedBackground: UIImage {
+        return UIImage(named: "Tabbar_Background")!
+    }
+
 }
 
 extension UIImageView {

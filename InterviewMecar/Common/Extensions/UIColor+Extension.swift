@@ -49,4 +49,16 @@ extension UIColor {
         return UIColor.white
     }
     
+    static var tabbarSelectedTintColor: UIColor {
+        return UIColor.white
+    }
+    
+    static var tabbarBackgroundColor: UIColor {
+        return UIColor.white
+    }
+    
+    static var tabbarUnselectedTintColor: UIColor {
+        return UIColor.black
+    }
+    
 }
